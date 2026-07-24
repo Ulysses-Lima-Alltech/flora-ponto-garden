@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="260" viewBox="0 0 230 260" role="img" aria-labelledby="title desc">
+  <title id="title">Flora placeholder</title>
+  <desc id="desc">Ilustracao local provisoria da assistente Flora, substituivel por arte oficial.</desc>
+  <rect x="18" y="8" width="194" height="244" rx="94" fill="#EEF5E7"/>
+  <circle cx="115" cy="100" r="53" fill="#F7EBC3"/>
+  <path d="M65 96c1-45 84-63 100 0-18-20-30-23-50-23-20 0-31 4-50 23Z" fill="#754184"/>
+  <circle cx="95" cy="104" r="5" fill="#183326"/><circle cx="135" cy="104" r="5" fill="#183326"/>
+  <path d="M98 127c10 8 24 8 34 0" fill="none" stroke="#183326" stroke-linecap="round" stroke-width="4"/>
+  <path d="M58 220c8-61 106-71 114 0" fill="#185C35"/>
+  <path d="M89 191c10 8 41 8 52 0v34H89Z" fill="#DCEBC9"/>
+  <text x="115" y="243" text-anchor="middle" fill="#526359" font-family="Arial, sans-serif" font-size="11">FLORA PROVISORIA</text>
+</svg>

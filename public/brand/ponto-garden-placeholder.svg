@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="72" viewBox="0 0 240 72" role="img" aria-labelledby="title desc">
+  <title id="title">Ponto Garden placeholder</title>
+  <desc id="desc">Placeholder local substituivel pelo logotipo oficial da Ponto Garden.</desc>
+  <rect width="240" height="72" rx="12" fill="#EEF5E7"/>
+  <path d="M29 49c1-17 10-25 25-27-2 16-10 25-25 27Z" fill="#185C35"/>
+  <path d="M28 50c1-14-5-22-17-26 0 14 6 23 17 26Z" fill="#754184"/>
+  <text x="62" y="33" fill="#0D4026" font-family="Arial, sans-serif" font-size="17" font-weight="700">PONTO GARDEN</text>
+  <text x="62" y="52" fill="#526359" font-family="Arial, sans-serif" font-size="10">marca provisoria</text>
+</svg>

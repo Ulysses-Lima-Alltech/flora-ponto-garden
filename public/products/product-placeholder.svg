@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="220" viewBox="0 0 180 220" role="img" aria-labelledby="title desc">
+  <title id="title">Produto placeholder</title>
+  <desc id="desc">Imagem local neutra provisoria para produtos do catalogo.</desc>
+  <rect width="180" height="220" rx="18" fill="#EEF5E7"/>
+  <path d="M90 174V90" stroke="#185C35" stroke-linecap="round" stroke-width="8"/>
+  <path d="M89 121c-45-8-50-49-35-65 35 8 48 35 35 65Z" fill="#DCEBC9" stroke="#185C35" stroke-width="5"/>
+  <path d="M92 103c16-37 52-35 64-18-15 28-41 32-64 18Z" fill="#754184"/>
+  <path d="M43 168h94l-12 28H55Z" fill="#F7EBC3" stroke="#185C35" stroke-linejoin="round" stroke-width="5"/>
+  <text x="90" y="211" text-anchor="middle" fill="#526359" font-family="Arial, sans-serif" font-size="10">IMAGEM PROVISORIA</text>
+</svg>
