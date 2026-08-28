@@ -1,7 +1,12 @@
 import type { CompatibilityRule, Product, ProductCategory, Recommendation } from '../types/catalog'
 import type { PlantComparisonFacts, PlantProfile } from '../types/plant-knowledge'
-import { plantProfiles, productPlantProfileIds } from './plant-knowledge.generated'
+import { plantProfiles as herbPlantProfiles, productPlantProfileIds as herbProductPlantProfileIds } from './plant-knowledge.generated'
+import { flowerPlantProfiles, flowerProductPlantProfileIds } from './plant-knowledge-flowers.generated'
 import { productsGenerated } from './products.generated'
+import { salesUnitsByProductCode, topSellingProductCodes } from './sales-popularity.generated'
+
+const plantProfiles: PlantProfile[] = [...herbPlantProfiles, ...flowerPlantProfiles]
+const productPlantProfileIds: Record<string, string> = { ...herbProductPlantProfileIds, ...flowerProductPlantProfileIds }
 
 export const products: Product[] = productsGenerated.map((product) => {
   const plantProfileId = productPlantProfileIds[product.id]
@@ -16,6 +21,10 @@ export const productCategories = [...new Set(products.map((product) => product.c
 
 export const getPlantProfile = (plantProfileId?: string) => plantProfiles.find((profile) => profile.id === plantProfileId)
 export const getProductsByPlantProfile = (plantProfileId: string) => products.filter((product) => product.plantProfileId === plantProfileId)
+
+const topSellingProductIds = new Set(topSellingProductCodes)
+export const getSalesUnits = (productId: string) => salesUnitsByProductCode[productId] ?? 0
+export const isTopSeller = (productId: string) => topSellingProductIds.has(productId)
 
 const careSimilarity = (source: PlantProfile, target: PlantProfile) => [
   source.light?.level === target.light?.level,
@@ -51,6 +60,9 @@ export const getRelatedProductsForProduct = (product: Product, excludedProductId
     return relatedProfileIds.has(candidateProfile.id) || careSimilarity(profile, candidateProfile) >= 2 || sharesPurpose
   }).slice(0, 6)
 }
+
+export const getSameCategoryProducts = (product: Product, limit = 6) =>
+  products.filter((candidate) => candidate.category === product.category && candidate.id !== product.id).slice(0, limit)
 
 export const getPlantComparisonFacts = (product: Product): PlantComparisonFacts | undefined => {
   const profile = getPlantProfile(product.plantProfileId)

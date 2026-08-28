@@ -109,24 +109,6 @@ export const productPlantProfileIds: Record<string, string> = {
   '00021124': 'capim-limao', '00030472': 'alecrim-rasteiro', '00030477': 'boldo-africano', '00030491': 'insulina', '00031567': 'alface', '00031568': 'alface', '00031576': 'acelga', '00031577': 'alface', '00031578': 'alface', '00032150': 'manjericao', '00033253': 'cana-do-brejo', '00033255': 'pariparoba', '00033256': 'patchouli', '00033292': 'tomilho-limao', '00034347': 'endro', '00035141': 'peixinho', '00035451': 'cebolinha', '00042886': 'babosa-arborescens', '00220004': 'nira', '00220009': 'acelga', '00220015': 'levante', '00220021': 'alfazema', '00220025': 'alecrim', '00220038': 'avelos', '00220081': 'alfazema', '00220281': 'cidreira-de-arvore', '00220658': 'stevia', '00220743': 'berinjela', '00220744': 'levante', '00220761': 'guine', '00220774': 'cebolinha', '00220778': 'erva-luisa', '00220780': 'pimenta-biquinho', '00220782': 'louro', '00220793': 'coentro', '00220794': 'cebolette', '00220800': 'cebolette', '00220805': 'stevia', '00220813': 'erva-baleeira', '00220817': 'erva-baleeira', '00220819': 'louro', '00220821': 'alecrim', '00220824': 'alface', '00220825': 'pimenta-biquinho', '00220826': 'boldo-rasteiro',
 }
 
-export const pendingHerbProductKnowledge: Record<string, { cleanName: string; note: string }> = {
-  '00030479': { cleanName: 'Boldo-miúdo', note: 'Nome comercial ambíguo; confirmar espécie e variedade.' },
-  '00030503': { cleanName: 'Saião', note: 'Nome popular pode indicar espécies diferentes de Kalanchoe.' },
-  '00030507': { cleanName: 'Trevo-de-quatro-folhas', note: 'Nome comercial pode indicar gêneros distintos.' },
-  '00031672': { cleanName: 'Incenso / mirra', note: 'Nome comercial não permite identificar a espécie com segurança.' },
-  '00031689': { cleanName: 'Agrião', note: 'A Embrapa registra mais de uma espécie comercializada como agrião.' },
-  '00031854': { cleanName: 'Arnica-do-mato', note: 'Nome popular usado para espécies diferentes no Brasil.' },
-  '00031878': { cleanName: 'Artemísia', note: 'Nome popular sem espécie ou variedade informada.' },
-  '00032092': { cleanName: 'Alecrim-macho', note: 'Nome regional ambíguo; confirmar espécie do fornecedor.' },
-  '00033251': { cleanName: 'Anador', note: 'Nome comercial ambíguo; confirmar espécie do fornecedor.' },
-  '00033760': { cleanName: 'Erva-de-gato', note: 'Nome popular pode indicar espécies distintas.' },
-  '00220014': { cleanName: 'Mirra-prateada', note: 'Nome comercial não permite identificar a espécie com segurança.' },
-  '00220018': { cleanName: 'Bálsamo', note: 'Nome popular pode indicar espécies diferentes.' },
-  '00220020': { cleanName: 'Mostarda', note: 'Nome comercial não informa espécie ou cultivar.' },
-  '00220022': { cleanName: 'Boldo-indígena aluma', note: 'Nome comercial regional e ambíguo.' },
-  '00220289': { cleanName: 'Citronela', note: 'O nome pode designar espécies diferentes de Cymbopogon.' },
-  '00220760': { cleanName: 'Erva-cidreira', note: 'Nome popular pode indicar espécies diferentes.' },
-  '00220779': { cleanName: 'Gervão', note: 'Nome popular pode indicar espécies diferentes.' },
-  '00220798': { cleanName: 'Curry', note: 'Nome comercial pode indicar espécies distintas.' },
-  '00220803': { cleanName: 'Urtiga', note: 'Nome popular sem espécie ou variedade informada.' },
-}
+// The 19 herb items that were previously pending species identification now
+// have published profiles in plant-knowledge-flowers.generated.ts (best-guess
+// identification from the commercial name; see docs/plant-knowledge-report.md).

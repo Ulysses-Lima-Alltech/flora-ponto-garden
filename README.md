@@ -7,10 +7,15 @@ Flora e o catalogo de orientacao botanica da Ponto Garden para consulta em totem
 - Catalogo com 474 produtos reais, imagens publicas e busca local.
 - Categorias Ervas e Temperos, Flores e Plantas e Fertilizantes.
 - Base botanica local com 31 perfis e 45 produtos vinculados.
-- Escolha guiada em `/escolher`, com recomendacao deterministica local.
+- Escolha guiada em `/escolher`, com recomendacao deterministica local que cruza cuidados cadastrados, preferencias salvas do cliente (quando ha acesso ativo) e popularidade de vendas real da loja.
+- Apos a recomendacao, sugestao de complementos do proprio catalogo (fertilizantes e plantas companheiras) para cada planta indicada.
+- Sinal local de "Mais procurado" calculado a partir dos relatorios de vendas reais da loja (`scripts/prepare-sales-popularity.py`), sem qualquer chamada externa.
 - Comparacao anonima de ate duas plantas em `/comparar`.
-- Favoritos em memoria associados somente ao cliente mockado com sessao ativa.
-- Interface sem preco, estoque, codigo comercial, carrinho ou checkout.
+- Leitura de codigo de barras via camera (celular) ou leitor fisico do totem em `/scanner`.
+- Favoritos, historico de consultas e uma lista pessoal ("Minha lista") para mostrar a um vendedor, tudo em memoria/local ao dispositivo.
+- Cuidados gerais e central de Ajuda com atalhos para cada funcionalidade.
+- Mascote animada da Flora, presente em todas as telas em uma faixa propria (nunca sobre botoes ou conteudo).
+- Interface sem preco, estoque, codigo comercial, carrinho ou checkout — nenhuma tela permite finalizar uma compra.
 
 ## Stack
 
@@ -44,7 +49,7 @@ O Vite informa a URL local ao iniciar. Nenhuma tela do MVP depende de chamadas e
 
 ## Catalogo
 
-O catalogo distribuido em `src/data/products.generated.ts` e a base de conhecimento em `src/data/plant-knowledge.generated.ts` fazem parte da aplicacao. Os scripts em `scripts/` sao destinados a manutencao controlada da importacao; nao altere o catalogo gerado manualmente.
+O catalogo distribuido em `src/data/products.generated.ts`, a base de conhecimento em `src/data/plant-knowledge.generated.ts` e o sinal de popularidade em `src/data/sales-popularity.generated.ts` fazem parte da aplicacao. Os scripts em `scripts/` sao destinados a manutencao controlada da importacao; nao altere os arquivos gerados manualmente. O sinal de popularidade cobre apenas Ervas e Temperos e Fertilizantes, pois foi essa a base de vendas real fornecida; Flores e Plantas nao tem relatorio de vendas disponivel.
 
 Relatorios de integracao, conhecimento botanico e pendencias estao em `docs/`.
 
@@ -94,7 +99,8 @@ O acesso nao usa backend, SMS ou WhatsApp. Favoritos ficam somente em memoria e 
 ## Limitacoes atuais
 
 - 19 itens de Ervas e Temperos seguem sem perfil botanico especifico e usam a dica geral do catalogo.
-- Camera, leitor fisico, backend, autenticacao real e dados de vendas nao fazem parte deste MVP.
+- O leitor fisico do totem ainda nao foi validado em hardware real; a leitura assume um leitor que emula teclado (padrao mais comum). Veja `src/features/scanner/KeyboardWedgeScanner.ts`.
+- Backend e autenticacao real nao fazem parte deste MVP. "Criar acesso" (nome, celular, e-mail) ja funciona e salva localmente no totem; sincronizar contas entre totens via Firebase e opcional -- veja [docs/firebase-setup.md](docs/firebase-setup.md).
 - A assinatura de producao e a publicacao na Google Play ainda nao foram configuradas.
 
 ## Seguranca do repositorio

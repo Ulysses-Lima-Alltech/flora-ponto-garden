@@ -33,6 +33,20 @@ O arquivo resultante fica em:
 android\app\build\outputs\apk\debug\app-debug.apk
 ```
 
+## Build para o totem Gertec SK-210 (leitor físico em vez de câmera)
+
+O totem Gertec SK-210 tem um leitor de código de barras físico instalado no lugar da câmera. Para esse dispositivo, gere o APK com o modo `totem`, que desativa completamente o caminho de câmera/ML Kit (o botão "Ler com a câmera" some da tela de scanner) e usa somente o leitor físico, que já é lido via teclado (modo *keyboard wedge*, ver `src/features/scanner/KeyboardWedgeScanner.ts`):
+
+```powershell
+npm run build:totem
+npx cap sync android
+Set-Location android
+.\gradlew.bat clean
+.\gradlew.bat assembleDebug
+```
+
+O modo é controlado pela variável `VITE_SCAN_MODE=hardware`, definida em `.env.totem` (carregado automaticamente pelo Vite quando o build roda com `--mode totem`). Para builds normais (com câmera disponível), continue usando `npm run build`.
+
 Para a entrega local do MVP, ele pode ser copiado para:
 
 ```text

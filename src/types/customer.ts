@@ -15,10 +15,17 @@ export interface CustomerAccount {
   firstName: string
   fullName: string
   phone: string
+  email?: string
   createdAt: string
   preferences: CustomerPreference
   purchaseIds: string[]
   tipIds: string[]
+}
+
+export interface NewCustomerInput {
+  fullName: string
+  phone: string
+  email: string
 }
 
 export interface CustomerPurchaseItem {

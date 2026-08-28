@@ -21,7 +21,12 @@ interface KioskState {
   toggleAudio: () => void
   toggleFavorite: (productId: string) => void
   recordViewedProduct: (productId: string) => void
+  clearViewedProducts: () => void
   addToOrder: (productId: string) => void
+  incrementOrderItem: (productId: string) => void
+  decrementOrderItem: (productId: string) => void
+  removeFromOrder: (productId: string) => void
+  clearOrder: () => void
   toggleComparisonPlant: (productId: string) => void
   setTemporaryPhone: (phone: string) => void
   startCustomerSession: (customer: CustomerAccount) => void
@@ -72,10 +77,22 @@ export const useKioskStore = create<KioskState>()(persist((set) => ({
     }
   }),
   recordViewedProduct: (productId) => set((state) => ({ viewedProductIds: [productId, ...state.viewedProductIds.filter((id) => id !== productId)].slice(0, 20) })),
+  clearViewedProducts: () => set({ viewedProductIds: [] }),
   addToOrder: (productId) => set((state) => {
     const existing = state.orderItems.find((item) => item.productId === productId)
     return { orderItems: existing ? state.orderItems.map((item) => item.productId === productId ? { ...item, quantity: item.quantity + 1 } : item) : [...state.orderItems, { productId, quantity: 1 }] }
   }),
+  incrementOrderItem: (productId) => set((state) => ({
+    orderItems: state.orderItems.map((item) => item.productId === productId ? { ...item, quantity: item.quantity + 1 } : item),
+  })),
+  decrementOrderItem: (productId) => set((state) => ({
+    orderItems: state.orderItems.flatMap((item) => {
+      if (item.productId !== productId) return [item]
+      return item.quantity > 1 ? [{ ...item, quantity: item.quantity - 1 }] : []
+    }),
+  })),
+  removeFromOrder: (productId) => set((state) => ({ orderItems: state.orderItems.filter((item) => item.productId !== productId) })),
+  clearOrder: () => set({ orderItems: [] }),
   toggleComparisonPlant: (productId) => set((state) => {
     const product = getProductById(productId)
     if (!product || product.category === 'fertilizers') return {}
