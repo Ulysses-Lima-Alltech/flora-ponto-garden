@@ -115,7 +115,11 @@ export const useKioskStore = create<KioskState>()(persist((set) => ({
     customerSessionStartedAt: null,
     temporaryPhone: '',
     favoriteProductIds: [],
+    viewedProductIds: [],
+    orderItems: [],
+    comparisonPlantIds: [],
     lastInteraction: Date.now(),
+    journeySession: crypto.randomUUID(),
   }),
   markInteraction: () => set({ lastInteraction: Date.now() }),
 }), {

@@ -14,10 +14,8 @@ export type PlantFinderAnswers = {
 
 export interface PlantFinderMatch {
   product: Product
-  // Undefined when the product has no researched care profile yet (today
-  // that's true for the whole Flores e Plantas category -- only Ervas e
-  // Temperos has been through botanical review). The card still links to
-  // the product, just without care facts/complements.
+  // Undefined when the product has no researched care profile yet. The card
+  // still links to the product, just without care facts/complements.
   profile: PlantProfile | undefined
   score: number
   reasons: string[]
@@ -98,6 +96,9 @@ const scoreEnvironment = (profile: PlantProfile, answer: PlantFinderAnswers['env
   return answer === 'outdoor' ? 'Adapta-se a áreas externas.' : 'Funciona bem em um ambiente com vasos.'
 }
 
+const isEnvironmentCompatible = (profile: PlantProfile, answer: PlantFinderAnswers['environment']) =>
+  answer === 'unknown' || Boolean(scoreEnvironment(profile, answer))
+
 const scoreLight = (profile: PlantProfile, answer: PlantFinderAnswers['light']) => {
   if (answer === 'unknown') return undefined
   const value = profile.light?.level
@@ -110,6 +111,9 @@ const scoreLight = (profile: PlantProfile, answer: PlantFinderAnswers['light']) 
   if (!matches[answer]) return undefined
   return answer === 'direct' || answer === 'some-sun' ? 'Combina com a luminosidade com sol informada.' : 'Prefere um local com boa claridade.'
 }
+
+const isLightCompatible = (profile: PlantProfile, answer: PlantFinderAnswers['light']) =>
+  answer === 'unknown' || Boolean(scoreLight(profile, answer))
 
 const scoreCare = (profile: PlantProfile, answer: PlantFinderAnswers['care']) => {
   if (answer === 'unknown') return undefined
@@ -187,10 +191,13 @@ export const findRecommendedPlants = (answers: PlantFinderAnswers, customerConte
   // candidate pool up front (not just withholding the purpose bonus) keeps
   // an off-category item (e.g. a culinary herb) from ever appearing just
   // because it happened to score on unrelated care attributes.
-  const candidates = profileCandidates().filter(({ product }) => {
-    if (answers.purpose === 'decoration') return isDecorativeFlower(product)
-    if (answers.purpose === 'culinary') return product.category === 'herbs-spices'
-    return true
+  const candidates = profileCandidates().filter(({ product, profile }) => {
+    const isPurposeCompatible =
+      (answers.purpose === 'decoration' && isDecorativeFlower(product)) ||
+      (answers.purpose === 'culinary' && product.category === 'herbs-spices') ||
+      (answers.purpose !== 'decoration' && answers.purpose !== 'culinary')
+
+    return isPurposeCompatible && isEnvironmentCompatible(profile, answers.environment) && isLightCompatible(profile, answers.light)
   })
 
   const scored = candidates.map(({ product, profile }) => {
@@ -222,6 +229,9 @@ export const findRecommendedPlants = (answers: PlantFinderAnswers, customerConte
   // "decoração" -> Flores e Plantas has none yet). Fall back to plain
   // catalog items from that category rather than showing an empty screen.
   if (answers.purpose !== 'decoration' && answers.purpose !== 'culinary') return { matches: [], hasCompleteMatch: false }
+
+  const hasExplicitCareConstraint = answers.environment !== 'unknown' || answers.light !== 'unknown' || answers.care !== 'unknown'
+  if (hasExplicitCareConstraint) return { matches: [], hasCompleteMatch: false }
 
   const fallbackMatches = (answers.purpose === 'decoration' ? products.filter(isDecorativeFlower) : getProductsByCategory('herbs-spices'))
     .slice()

@@ -4,9 +4,9 @@
 
 A categoria "Flores e Plantas" (284 produtos) não tinha nenhum perfil botânico publicado — só a categoria Ervas e Temperos havia recebido esse tratamento. A pedido do responsável pelo catálogo, foi publicada a identificação mais provável para cada nome comercial (155 perfis, cobrindo os 284 produtos de Flores e Plantas), incluindo os 19 itens de Ervas e Temperos que antes ficavam na fila de pendência por ambiguidade de nome popular (ver `docs/pending-plant-review.md`, encerrada).
 
-Decisão explícita do responsável: **não exibir nenhum indicador de baixa confiança na interface** para essas identificações — o campo interno `confidence` foi marcado como `'revisado'` em todos os novos perfis (o mesmo valor usado nos perfis já confirmados por fonte), e o risco de identificação incorreta a partir do nome comercial foi assumido pelo responsável pelo catálogo, não pela Flora.
+Os perfis publicados por inferência a partir de nome comercial permanecem marcados como `provável`. A interface deve exibir aviso de revisão botânica para esses casos e não tratá-los como identificação confirmada.
 
-Os dados ficam em `src/data/plant-knowledge-flowers.generated.ts` (perfis + mapeamento produto → perfil), somados aos perfis originais de ervas em `src/data/plant-knowledge.generated.ts` (`src/data/products.ts` mescla os dois). Continuam válidas as mesmas regras de publicação da seção "Regras de publicação" abaixo, exceto a exibição de aviso de revisão, que foi desativada para esses perfis por decisão do responsável.
+Os dados ficam em `src/data/plant-knowledge-flowers.generated.ts` (perfis + mapeamento produto → perfil), somados aos perfis originais de ervas em `src/data/plant-knowledge.generated.ts` (`src/data/products.ts` mescla os dois). Continuam válidas as mesmas regras de publicação da seção "Regras de publicação" abaixo.
 
 ## Enriquecimento completo de Ervas e Temperos
 
