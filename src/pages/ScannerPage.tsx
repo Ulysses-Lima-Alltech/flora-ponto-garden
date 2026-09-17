@@ -4,22 +4,45 @@ import { useNavigate } from 'react-router-dom'
 import { PageHeader } from '../components/ui/PageHeader'
 import { TouchButton } from '../components/ui/TouchButton'
 import { listenForKeyboardWedgeScan } from '../features/scanner/KeyboardWedgeScanner'
-import { getScannerService, isHardwareScanMode } from '../features/scanner/ScannerService'
+import { getScannerService, scannerMode } from '../features/scanner/ScannerService'
 import { resolveProductFromScan } from '../utils/barcode'
+
+const scannerModeLabels = {
+  camera: 'Camera',
+  gertec: 'Leitor Gertec',
+  keyboard: 'Leitor teclado',
+} as const
 
 export function ScannerPage() {
   const navigate = useNavigate()
   const [manualCode, setManualCode] = useState('')
   const [feedback, setFeedback] = useState('')
-  const [isCameraAvailable, setCameraAvailable] = useState(false)
-  const [isScanningWithCamera, setScanningWithCamera] = useState(false)
+  const [scannerAvailability, setScannerAvailability] = useState<{ available: boolean; reason?: string }>({ available: false })
+  const [isScanning, setScanning] = useState(false)
   const isResolvingRef = useRef(false)
+  const scannerService = getScannerService()
 
   useEffect(() => {
     let isMounted = true
-    getScannerService().isAvailable().then((available) => { if (isMounted) setCameraAvailable(available) })
+    scannerService.isAvailable().then((availability) => { if (isMounted) setScannerAvailability(availability) })
     return () => { isMounted = false }
-  }, [])
+  }, [scannerService])
+
+  useEffect(() => {
+    const stopScanner = () => {
+      scannerService.stop()
+    }
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') stopScanner()
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange)
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange)
+      stopScanner()
+    }
+  }, [scannerService])
 
   const handleScannedValue = useCallback((rawValue: string) => {
     if (isResolvingRef.current) return
@@ -27,15 +50,19 @@ export function ScannerPage() {
 
     const product = resolveProductFromScan(rawValue)
     if (product) {
+      scannerService.stop()
       navigate(`/produto/${product.id}`)
       return
     }
 
     setFeedback(`Nenhum produto encontrado para o código lido (${rawValue}). Tente novamente ou digite o código manualmente.`)
     isResolvingRef.current = false
-  }, [navigate])
+  }, [navigate, scannerService])
 
-  useEffect(() => listenForKeyboardWedgeScan(handleScannedValue), [handleScannedValue])
+  useEffect(() => {
+    if (scannerMode === 'camera') return undefined
+    return listenForKeyboardWedgeScan(handleScannedValue)
+  }, [handleScannedValue])
 
   const handleManualSubmit = (event: React.FormEvent) => {
     event.preventDefault()
@@ -43,17 +70,21 @@ export function ScannerPage() {
     handleScannedValue(manualCode.trim())
   }
 
-  const handleCameraScan = async () => {
+  const handleScannerScan = async () => {
     setFeedback('')
-    setScanningWithCamera(true)
+    setScanning(true)
     try {
-      const result = await getScannerService().scan()
+      const result = await scannerService.scan()
       if (result) handleScannedValue(result.value)
       else setFeedback('Nenhum código foi lido. Tente novamente.')
-    } catch {
-      setFeedback('Não foi possível acessar a câmera. Verifique a permissão do app e tente novamente.')
+    } catch (error) {
+      const message = error instanceof Error ? error.message : undefined
+      setFeedback(message || (scannerMode === 'gertec'
+        ? 'Não foi possível acionar o leitor Gertec. Use a entrada manual ou o fallback por teclado.'
+        : 'Não foi possível acessar a câmera. Verifique a permissão do app e tente novamente.'))
     } finally {
-      setScanningWithCamera(false)
+      await scannerService.stop()
+      setScanning(false)
     }
   }
 
@@ -63,17 +94,26 @@ export function ScannerPage() {
 
       <div className="scanner-hint">
         <ScanBarcode aria-hidden="true" />
-        <p>
-          {isHardwareScanMode
-            ? 'Aponte o leitor deste totem para o código de barras do produto a qualquer momento nesta tela.'
-            : 'Se este totem tiver leitor de código de barras, basta escanear o produto a qualquer momento nesta tela.'}
-        </p>
+        <p><b>{scannerModeLabels[scannerMode]}</b>{scannerMode === 'gertec'
+          ? ' configurado como método principal. Toque para iniciar a leitura nativa; o leitor por teclado fica como fallback técnico.'
+          : scannerMode === 'keyboard'
+            ? ' configurado como fallback. Aponte o leitor e finalize com Enter, ou digite manualmente.'
+            : ' configurada como método principal para celular.'}</p>
       </div>
 
-      {isCameraAvailable && (
-        <TouchButton onClick={handleCameraScan} disabled={isScanningWithCamera}>
-          {isScanningWithCamera ? 'Abrindo câmera...' : 'Ler com a câmera'}
+      {scannerMode !== 'keyboard' && (
+        <TouchButton onClick={handleScannerScan} disabled={isScanning || !scannerAvailability.available}>
+          {isScanning
+            ? (scannerMode === 'gertec' ? 'Aguardando leitura no leitor do totem...' : 'Abrindo câmera...')
+            : (scannerMode === 'gertec' ? 'Iniciar leitor Gertec' : 'Ler com a câmera')}
         </TouchButton>
+      )}
+
+      {scannerMode === 'gertec' && !scannerAvailability.available && (
+        <div className="scanner-feedback" role="status">
+          <AlertCircle aria-hidden="true" />
+          <span>{scannerAvailability.reason || 'Leitor Gertec indisponível neste build. Use a entrada manual ou o fallback por teclado.'}</span>
+        </div>
       )}
 
       <form className="scanner-manual-form" onSubmit={handleManualSubmit}>
@@ -94,6 +134,7 @@ export function ScannerPage() {
         <div className="scanner-feedback" role="status">
           <AlertCircle aria-hidden="true" />
           <span>{feedback}</span>
+          {scannerMode !== 'keyboard' && scannerAvailability.available && <TouchButton variant="secondary" onClick={handleScannerScan}>Tentar novamente</TouchButton>}
         </div>
       )}
     </section>

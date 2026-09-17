@@ -26,6 +26,7 @@ android/app/build/
 *.aab
 
 # Signing material and credentials
+android/app/libs/*.aar
 *.jks
 *.keystore
 *.p12

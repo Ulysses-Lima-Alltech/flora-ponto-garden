@@ -24,28 +24,30 @@ O `cap sync` copia o build web para `android/app/src/main/assets/public` e atual
 ```powershell
 Set-Location android
 .\gradlew.bat clean
-.\gradlew.bat assembleDebug
+.\gradlew.bat assembleMobileDebug
 ```
 
 O arquivo resultante fica em:
 
 ```text
-android\app\build\outputs\apk\debug\app-debug.apk
+android\app\build\outputs\apk\mobile\debug\app-mobile-debug.apk
 ```
 
-## Build para o totem Gertec SK-210 (leitor físico em vez de câmera)
+## Build para o totem Gertec SK-210 (leitor nativo Gertec)
 
-O totem Gertec SK-210 tem um leitor de código de barras físico instalado no lugar da câmera. Para esse dispositivo, gere o APK com o modo `totem`, que desativa completamente o caminho de câmera/ML Kit (o botão "Ler com a câmera" some da tela de scanner) e usa somente o leitor físico, que já é lido via teclado (modo *keyboard wedge*, ver `src/features/scanner/KeyboardWedgeScanner.ts`):
+O totem Gertec SK-210 deve usar o SDK nativo `GerSDKVarejo.aar` como metodo principal de leitura. O modo *keyboard wedge* permanece apenas como fallback tecnico e a entrada manual continua disponivel.
 
 ```powershell
 npm run build:totem
 npx cap sync android
 Set-Location android
 .\gradlew.bat clean
-.\gradlew.bat assembleDebug
+.\gradlew.bat assembleTotemDebug
 ```
 
-O modo é controlado pela variável `VITE_SCAN_MODE=hardware`, definida em `.env.totem` (carregado automaticamente pelo Vite quando o build roda com `--mode totem`). Para builds normais (com câmera disponível), continue usando `npm run build`.
+O modo é controlado pela variável `VITE_SCAN_MODE=gertec`, definida em `.env.totem` (carregado automaticamente pelo Vite quando o build roda com `--mode totem`). Para builds normais de celular, continue usando `npm run build` e `assembleMobileDebug`.
+
+Sem `android/app/libs/GerSDKVarejo.aar`, `assembleTotemDebug` falha de proposito com uma mensagem clara. Veja [docs/gertec-scanner-setup.md](gertec-scanner-setup.md).
 
 Para a entrega local do MVP, ele pode ser copiado para:
 
@@ -74,7 +76,7 @@ O parametro `-r` atualiza a instalacao existente sem apagar dados. Nao execute c
 1. Altere `versionCode` para um inteiro maior em `android/app/build.gradle`.
 2. Atualize `versionName` com a nova versao legivel.
 3. Mantenha `package.json` e `capacitor.config.ts` coerentes quando a versao do produto mudar.
-4. Execute build, sync e `assembleDebug` novamente.
+4. Execute build, sync e `assembleMobileDebug` ou `assembleTotemDebug` novamente.
 
 O application ID atual e `br.com.pontogarden.flora`; ele deve permanecer estavel para que uma nova versao atualize o mesmo aplicativo.
 

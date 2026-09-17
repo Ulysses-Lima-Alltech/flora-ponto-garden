@@ -11,7 +11,7 @@ Flora e o catalogo de orientacao botanica da Ponto Garden para consulta em totem
 - Apos a recomendacao, sugestao de complementos do proprio catalogo (fertilizantes e plantas companheiras) para cada planta indicada.
 - Sinal local de "Mais procurado" calculado a partir dos relatorios de vendas reais da loja (`scripts/prepare-sales-popularity.py`), sem qualquer chamada externa.
 - Comparacao anonima de ate duas plantas em `/comparar`.
-- Leitura de codigo de barras via camera (celular) ou leitor fisico do totem em `/scanner`.
+- Leitura de codigo de barras via camera (celular), leitor Gertec nativo no totem ou fallback keyboard wedge em `/scanner`.
 - Favoritos, historico de consultas e uma lista pessoal ("Minha lista") para mostrar a um vendedor, tudo em memoria/local ao dispositivo.
 - Cuidados gerais e central de Ajuda com atalhos para cada funcionalidade.
 - Mascote animada da Flora, presente em todas as telas em uma faixa propria (nunca sobre botoes ou conteudo).
@@ -71,10 +71,10 @@ npm run build
 npx cap sync android
 cd android
 gradlew.bat clean
-gradlew.bat assembleDebug
+gradlew.bat assembleMobileDebug
 ```
 
-O APK de depuracao fica em `android/app/build/outputs/apk/debug/app-debug.apk`. As instrucoes completas, incluindo ADB, assinatura e atualizacao de versao, estao em [docs/android-build.md](docs/android-build.md).
+O APK mobile de depuracao fica em `android/app/build/outputs/apk/mobile/debug/app-mobile-debug.apk`. As instrucoes completas, incluindo ADB, assinatura, atualizacao de versao e o modo Gertec, estao em [docs/android-build.md](docs/android-build.md) e [docs/gertec-scanner-setup.md](docs/gertec-scanner-setup.md).
 
 Identidade Android atual:
 
@@ -99,10 +99,10 @@ O acesso nao usa backend, SMS ou WhatsApp. Favoritos ficam somente em memoria e 
 ## Limitacoes atuais
 
 - 19 itens de Ervas e Temperos seguem sem perfil botanico especifico e usam a dica geral do catalogo.
-- O leitor fisico do totem ainda nao foi validado em hardware real; a leitura assume um leitor que emula teclado (padrao mais comum). Veja `src/features/scanner/KeyboardWedgeScanner.ts`.
+- O leitor Gertec nativo ainda nao foi validado em hardware real. Sem `android/app/libs/GerSDKVarejo.aar`, o build do flavor `totem` falha de proposito; o fallback keyboard wedge segue disponivel para teste tecnico.
 - Backend e autenticacao real nao fazem parte deste MVP. "Criar acesso" (nome, celular, e-mail) ja funciona e salva localmente no totem; sincronizar contas entre totens via Firebase e opcional -- veja [docs/firebase-setup.md](docs/firebase-setup.md).
 - A assinatura de producao e a publicacao na Google Play ainda nao foram configuradas.
 
 ## Seguranca do repositorio
 
-Nao versione APKs, AABs, keystores, `google-services.json`, variaveis de ambiente reais, artefatos de build ou planilhas comerciais brutas. Consulte [docs/mvp-audit.md](docs/mvp-audit.md) antes de alterar os ativos publicos do catalogo.
+Nao versione APKs, AABs, AARs proprietarios, keystores, `google-services.json`, variaveis de ambiente reais, artefatos de build ou planilhas comerciais brutas. Consulte [docs/mvp-audit.md](docs/mvp-audit.md) antes de alterar os ativos publicos do catalogo.

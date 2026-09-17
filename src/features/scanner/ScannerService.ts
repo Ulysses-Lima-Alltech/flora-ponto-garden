@@ -1,19 +1,39 @@
 import { Capacitor } from '@capacitor/core'
 import { BarcodeFormat, BarcodeScanner } from '@capacitor-mlkit/barcode-scanning'
+import { GertecScanner } from './GertecScannerPlugin'
 
 export interface ScanResult {
   value: string
-  format: 'barcode' | 'qr-code'
+  format: 'barcode' | 'qr-code' | 'gertec'
+  barcodeType?: string
+}
+
+export type ScannerMode = 'camera' | 'gertec' | 'keyboard'
+
+export interface ScannerAvailability {
+  available: boolean
+  reason?: string
 }
 
 export interface ScannerService {
-  isAvailable(): Promise<boolean>
+  isAvailable(): Promise<ScannerAvailability>
   scan(): Promise<ScanResult | null>
+  stop(): Promise<void>
 }
 
+const normalizeScanMode = (value: unknown): ScannerMode => {
+  if (value === 'gertec' || value === 'keyboard' || value === 'camera') return value
+  if (value === 'hardware') return 'keyboard'
+  return 'camera'
+}
+
+export const scannerMode = normalizeScanMode(import.meta.env.VITE_SCAN_MODE)
+export const isHardwareScanMode = scannerMode !== 'camera'
+
 export const mockScannerService: ScannerService = {
-  async isAvailable() { return false },
+  async isAvailable() { return { available: false, reason: 'Leitura automatica indisponivel neste modo.' } },
   async scan() { return null },
+  async stop() { return undefined },
 }
 
 const scannedFormats = [
@@ -28,16 +48,16 @@ const scannedFormats = [
 const cameraScannerService: ScannerService = {
   async isAvailable() {
     const { supported } = await BarcodeScanner.isSupported()
-    if (!supported) return false
+    if (!supported) return { available: false, reason: 'Leitura por camera nao suportada neste dispositivo.' }
 
     const { available } = await BarcodeScanner.isGoogleBarcodeScannerModuleAvailable()
-    if (available) return true
+    if (available) return { available: true }
 
     try {
       await BarcodeScanner.installGoogleBarcodeScannerModule()
-      return true
+      return { available: true }
     } catch {
-      return false
+      return { available: false, reason: 'Modulo de leitura por camera indisponivel.' }
     }
   },
   async scan() {
@@ -54,15 +74,37 @@ const cameraScannerService: ScannerService = {
 
     return { value, format: barcode.format === BarcodeFormat.QrCode ? 'qr-code' : 'barcode' }
   },
+  async stop() { return undefined },
 }
 
-// No totem Gertec o app roda com um leitor fisico de codigo de barras (modo
-// keyboard wedge, ver KeyboardWedgeScanner.ts) em vez de camera. O build do
-// totem define VITE_SCAN_MODE=hardware (ver .env.totem) para nunca acionar a
-// camera/ML Kit nesses dispositivos.
-export const isHardwareScanMode = import.meta.env.VITE_SCAN_MODE === 'hardware'
+const gertecScannerService: ScannerService = {
+  async isAvailable() {
+    if (!Capacitor.isNativePlatform()) {
+      return { available: false, reason: 'Leitor Gertec disponivel apenas no aplicativo Android do totem.' }
+    }
 
-export function getScannerService(): ScannerService {
-  if (isHardwareScanMode) return mockScannerService
+    try {
+      return await GertecScanner.isAvailable()
+    } catch {
+      return { available: false, reason: 'Plugin Gertec nao esta registrado neste build.' }
+    }
+  },
+  async scan() {
+    const result = await GertecScanner.startScan()
+    if (!result.data) return null
+    return { value: result.data, format: 'gertec', barcodeType: result.barcodeType }
+  },
+  async stop() {
+    try {
+      await GertecScanner.stopScan()
+    } catch {
+      // Plugin may be unavailable in web/mobile builds.
+    }
+  },
+}
+
+export function getScannerService(mode: ScannerMode = scannerMode): ScannerService {
+  if (mode === 'gertec') return gertecScannerService
+  if (mode === 'keyboard') return mockScannerService
   return Capacitor.isNativePlatform() ? cameraScannerService : mockScannerService
 }
