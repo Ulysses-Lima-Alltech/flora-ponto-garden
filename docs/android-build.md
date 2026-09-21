@@ -35,7 +35,7 @@ android\app\build\outputs\apk\mobile\debug\app-mobile-debug.apk
 
 ## Build para o totem Gertec SK-210 (leitor nativo Gertec)
 
-O totem Gertec SK-210 deve usar o SDK nativo `GerSDKVarejo.aar` como metodo principal de leitura. O modo *keyboard wedge* permanece apenas como fallback tecnico e a entrada manual continua disponivel.
+O totem Gertec SK-210 deve usar o SDK nativo `GerSDK_v104.aar` como metodo principal de leitura. O modo *keyboard wedge* permanece apenas como fallback tecnico e a entrada manual continua disponivel.
 
 ```powershell
 npm run build:totem
@@ -47,7 +47,7 @@ Set-Location android
 
 O modo é controlado pela variável `VITE_SCAN_MODE=gertec`, definida em `.env.totem` (carregado automaticamente pelo Vite quando o build roda com `--mode totem`). Para builds normais de celular, continue usando `npm run build` e `assembleMobileDebug`.
 
-Sem `android/app/libs/GerSDKVarejo.aar`, `assembleTotemDebug` falha de proposito com uma mensagem clara. Veja [docs/gertec-scanner-setup.md](gertec-scanner-setup.md).
+Sem `android/app/libs/GerSDK_v104.aar`, `assembleTotemDebug` falha de proposito com uma mensagem clara. Veja [docs/gertec-scanner-setup.md](gertec-scanner-setup.md).
 
 Para a entrega local do MVP, ele pode ser copiado para:
 

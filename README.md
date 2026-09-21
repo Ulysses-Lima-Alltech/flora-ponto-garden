@@ -99,7 +99,7 @@ O acesso nao usa backend, SMS ou WhatsApp. Favoritos ficam somente em memoria e 
 ## Limitacoes atuais
 
 - 19 itens de Ervas e Temperos seguem sem perfil botanico especifico e usam a dica geral do catalogo.
-- O leitor Gertec nativo ainda nao foi validado em hardware real. Sem `android/app/libs/GerSDKVarejo.aar`, o build do flavor `totem` falha de proposito; o fallback keyboard wedge segue disponivel para teste tecnico.
+- O leitor Gertec nativo ainda nao foi validado em hardware real. Sem `android/app/libs/GerSDK_v104.aar`, o build do flavor `totem` falha de proposito; o fallback keyboard wedge segue disponivel para teste tecnico.
 - Backend e autenticacao real nao fazem parte deste MVP. "Criar acesso" (nome, celular, e-mail) ja funciona e salva localmente no totem; sincronizar contas entre totens via Firebase e opcional -- veja [docs/firebase-setup.md](docs/firebase-setup.md).
 - A assinatura de producao e a publicacao na Google Play ainda nao foram configuradas.
 

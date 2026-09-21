@@ -60,7 +60,7 @@ export function ScannerPage() {
   }, [navigate, scannerService])
 
   useEffect(() => {
-    if (scannerMode === 'camera') return undefined
+    if (scannerMode !== 'keyboard') return undefined
     return listenForKeyboardWedgeScan(handleScannedValue)
   }, [handleScannedValue])
 
@@ -76,7 +76,7 @@ export function ScannerPage() {
     try {
       const result = await scannerService.scan()
       if (result) handleScannedValue(result.value)
-      else setFeedback('Nenhum código foi lido. Tente novamente.')
+      else setFeedback(scannerMode === 'gertec' ? 'Leitura Gertec cancelada. Tente novamente ou use a entrada manual.' : 'Nenhum código foi lido. Tente novamente.')
     } catch (error) {
       const message = error instanceof Error ? error.message : undefined
       setFeedback(message || (scannerMode === 'gertec'
@@ -95,7 +95,7 @@ export function ScannerPage() {
       <div className="scanner-hint">
         <ScanBarcode aria-hidden="true" />
         <p><b>{scannerModeLabels[scannerMode]}</b>{scannerMode === 'gertec'
-          ? ' configurado como método principal. Toque para iniciar a leitura nativa; o leitor por teclado fica como fallback técnico.'
+          ? ' configurado como método principal. Toque para iniciar a leitura nativa; use o modo keyboard apenas como fallback técnico explícito.'
           : scannerMode === 'keyboard'
             ? ' configurado como fallback. Aponte o leitor e finalize com Enter, ou digite manualmente.'
             : ' configurada como método principal para celular.'}</p>
