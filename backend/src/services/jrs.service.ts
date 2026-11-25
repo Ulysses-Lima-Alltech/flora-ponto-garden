@@ -59,7 +59,8 @@ async function authenticate() {
     expiresAt = Date.parse(data.expiresAtUtc);
 
     if (!Number.isFinite(expiresAt)) {
-        expiresAt = Date.now() + Number(data.expiresInSeconds || 0) * 1000;
+        expiresAt = Date.now() +
+            Number(data.expiresInSeconds || 0) * 1000;
     }
 
     console.log("[JRS] Autenticacao realizada com sucesso.");
@@ -67,7 +68,11 @@ async function authenticate() {
     return accessToken!;
 }
 
-async function request(path: string, retry = true): Promise<any> {
+async function request(
+    path: string,
+    retry = true
+): Promise<any> {
+
     const token = await authenticate();
 
     const response = await fetch(`${baseUrl}${path}`, {
@@ -83,13 +88,16 @@ async function request(path: string, retry = true): Promise<any> {
     if (response.status === 401 && retry) {
         accessToken = null;
         expiresAt = 0;
+
         return request(path, false);
     }
 
     const data = await response.json().catch(() => null);
 
     if (!response.ok) {
-        const error = new Error(`JRS retornou HTTP ${response.status}`);
+        const error = new Error(
+            `JRS retornou HTTP ${response.status}`
+        );
 
         Object.assign(error, {
             statusCode: response.status,
@@ -105,18 +113,32 @@ async function request(path: string, retry = true): Promise<any> {
 export const jrsService = {
     authenticate,
 
-    getGroups: () => request("/api/Grupos"),
+    getGroups: () =>
+        request("/api/Grupos"),
 
-    getFamilies: () => request("/api/Familias"),
+    getFamilies: () =>
+        request("/api/Familias"),
 
-    getProducts: () => request("/api/Produtos"),
+    getProducts: () =>
+        request("/api/Produtos"),
 
     getProductById: (id: string) =>
-        request(`/api/Produtos/${encodeURIComponent(id)}`),
+        request(
+            `/api/Produtos/${encodeURIComponent(id)}`
+        ),
 
     getProductByReference: (code: string) =>
-        request(`/api/Produtos/consulta?codRef=${encodeURIComponent(code)}`),
+        request(
+            `/api/Produtos/consulta?codRef=${encodeURIComponent(code)}`
+        ),
 
     getProductByCode: (code: string) =>
-        request(`/api/Produtos/consulta?codPro=${encodeURIComponent(code)}`)
+        request(
+            `/api/Produtos/consulta?codPro=${encodeURIComponent(code)}`
+        ),
+
+    getProductByBarcode: (barcode: string) =>
+        request(
+            `/api/Produtos/consulta?codBarra=${encodeURIComponent(barcode)}`
+        )
 };
