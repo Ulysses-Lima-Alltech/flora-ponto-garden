@@ -75,18 +75,13 @@ function normalizeProduct(product: any) {
 // ==========================================
 
 function handleError(error: any, res: Response) {
-
     const upstreamStatus = error?.statusCode;
-
-    console.error("[JRS] Falha na consulta", {
-        statusCode: upstreamStatus,
-        traceId: error?.traceId,
-        error: error?.message
-    });
+    const timedOut = error?.name === "TimeoutError" || error?.name === "AbortError" || upstreamStatus === 504;
 
     if (upstreamStatus === 404) {
         return res.status(404).json({
             success: false,
+            code: "PRODUCT_NOT_FOUND",
             message: "Produto nao encontrado."
         });
     }
@@ -94,23 +89,42 @@ function handleError(error: any, res: Response) {
     if (upstreamStatus === 400) {
         return res.status(400).json({
             success: false,
-            message: "Parametros de consulta invalidos."
+            code: "INVALID_PRODUCT_IDENTIFIER",
+            message: "Identificador do produto invalido."
         });
     }
 
-    if (
-        error?.name === "TimeoutError" ||
-        error?.name === "AbortError"
-    ) {
+    if (timedOut) {
+        console.warn("[JRS] Consulta comercial excedeu o tempo limite.", {
+            statusCode: upstreamStatus,
+            traceId: error?.traceId
+        });
         return res.status(504).json({
             success: false,
-            message: "Tempo limite de consulta excedido."
+            code: "API_TIMEOUT",
+            message: "A consulta comercial excedeu o tempo limite."
         });
     }
 
-    return res.status(502).json({
+    if (upstreamStatus === 503 || upstreamStatus === 429 || upstreamStatus >= 500) {
+        console.warn("[JRS] API comercial indisponivel.", {
+            statusCode: upstreamStatus,
+            traceId: error?.traceId
+        });
+        return res.status(503).json({
+            success: false,
+            code: "API_UNAVAILABLE",
+            message: "As informacoes comerciais estao temporariamente indisponiveis."
+        });
+    }
+
+    console.error("[FLORA] Erro interno ao consultar produto.", {
+        traceId: error?.traceId
+    });
+    return res.status(500).json({
         success: false,
-        message: "Nao foi possivel consultar o produto."
+        code: "INTERNAL_ERROR",
+        message: "Nao foi possivel concluir a consulta do produto."
     });
 }
 
@@ -132,7 +146,7 @@ async function executeLookup(
             if (!product || product.success !== true || product.id == null ||
                 typeof product.codRef !== "string" || !product.codRef ||
                 typeof product.description !== "string" || !product.description.trim()) {
-                throw new Error("Resposta invalida do ERP.");
+                throw Object.assign(new Error("Resposta invalida do ERP."), { statusCode: 502 });
             }
             return normalizeProduct(product);
         }, async (reference, signal) => {
@@ -142,14 +156,18 @@ async function executeLookup(
             }
             if (!product || product.success !== true || product.id == null ||
                 product.codRef !== reference || typeof product.description !== "string" || !product.description.trim()) {
-                throw new Error("Resposta invalida do ERP.");
+                throw Object.assign(new Error("Resposta invalida do ERP."), { statusCode: 502 });
             }
             return normalizeProduct(product);
         });
         return res.json({ success: true, data });
     } catch (error: any) {
         if (error?.statusCode === 503) {
-            return res.status(503).json({ success: false, message: "Servico temporariamente indisponivel." });
+            return res.status(503).json({
+                success: false,
+                code: "API_UNAVAILABLE",
+                message: "As informacoes comerciais estao temporariamente indisponiveis."
+            });
         }
         return handleError(error, res);
     }

@@ -7,7 +7,7 @@ import { tips } from '../../features/flora/tips'
 import { speakTip } from '../../features/flora/speech'
 import { useKioskStore } from '../../store/useKioskStore'
 
-export function FloraAssistant() {
+export function FloraAssistant({ showGreeting = true }: { showGreeting?: boolean }) {
   const reducedMotion = useReducedMotion()
   const audioEnabled = useKioskStore((state) => state.audioEnabled)
   const [isSpeaking, setSpeaking] = useState(false)
@@ -28,10 +28,8 @@ export function FloraAssistant() {
 
   return (
     <motion.section className="flora-assistant" initial={reducedMotion ? false : { opacity: 0.98, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.45 }}>
-      <div className="flora-copy">
-        <p className="flora-greeting">Olá! Eu sou a <span>Flora</span></p>
-        <p className="sr-only">Estou aqui para ajudar você a encontrar as plantas perfeitas e tudo o que elas precisam. Toque em uma opção abaixo, ou em mim para me ouvir de novo.</p>
-      </div>
+      {showGreeting && <div className="flora-copy"><p className="flora-greeting">Olá! Eu sou a <span>Flora</span></p></div>}
+      <p className="sr-only">Estou aqui para ajudar você a encontrar as plantas perfeitas e tudo o que elas precisam. Toque em uma opção abaixo, ou em mim para me ouvir de novo.</p>
       <button type="button" className="flora-portrait-frame" onClick={handleTap} aria-label="Ouvir a Flora">
         {isFloraAvatarConfigured ? <FloraTalkingHead isSpeaking={isSpeaking} /> : <FloraStaticAvatar className="flora-placeholder" />}
       </button>

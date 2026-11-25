@@ -10,5 +10,18 @@ const actions = [
 ]
 
 export function HomePage() {
-  return <div className="home-page"><FloraAssistant /><section className="home-actions" aria-label="Como a Flora pode ajudar">{actions.map((action) => <HomeActionCard key={action.to} {...action} />)}</section><HomeActionCard title="Escanear produto" description="Aponte o código de barras ou QR Code para buscar informações." to="/scanner" icon={ScanLine} tone="soft" variant="scanner" /></div>
+  return (
+    <div className="home-page">
+      <p className="flora-greeting">Olá! Eu sou a <span>Flora</span></p>
+      <div className="home-layout">
+        <FloraAssistant showGreeting={false} />
+        <div className="home-options">
+          <section className="home-actions" aria-label="Como a Flora pode ajudar">
+            {actions.map((action) => <HomeActionCard key={action.to} {...action} />)}
+          </section>
+          <HomeActionCard title="Escanear produto" description="Aponte o código de barras ou QR Code para buscar informações." to="/scanner" icon={ScanLine} tone="soft" variant="scanner" />
+        </div>
+      </div>
+    </div>
+  )
 }

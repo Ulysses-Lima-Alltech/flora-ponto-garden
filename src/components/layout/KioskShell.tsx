@@ -20,5 +20,5 @@ export function KioskShell({ children }: { children: ReactNode }) {
     return () => window.cancelAnimationFrame(animationFrame)
   }, [pathname])
 
-  return <KioskViewport><InactivityController /><div className="kiosk-shell"><main ref={mainRef} className="kiosk-main"><header className="app-header"><BrandPlaceholder />{!isHome && <FloraHeaderAvatar />}<AudioControl /></header><div className={`kiosk-content ${isHome ? 'kiosk-content--home' : ''}`}>{children}</div></main><BottomNavigation /></div></KioskViewport>
+  return <KioskViewport><InactivityController /><div className="kiosk-shell"><main ref={mainRef} className={`kiosk-main ${isHome ? 'kiosk-main--home' : ''}`}><header className="app-header"><BrandPlaceholder />{!isHome && <FloraHeaderAvatar />}<AudioControl /></header><div className={`kiosk-content ${isHome ? 'kiosk-content--home' : ''}`}>{children}</div></main><BottomNavigation /></div></KioskViewport>
 }

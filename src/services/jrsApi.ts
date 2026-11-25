@@ -18,10 +18,12 @@ const baseUrl = (
 
 export class ProductApiError extends Error {
   public readonly status: number
+  public readonly code: string
 
-  constructor(status: number, message: string) {
+  constructor(status: number, message: string, code = 'API_UNAVAILABLE') {
     super(message)
     this.status = status
+    this.code = code
   }
 }
 
@@ -139,17 +141,41 @@ async function requestProduct(
     )
 
     if (!response.ok) {
+      const errorPayload = await response.json().catch(() => undefined) as {
+        code?: unknown
+        message?: unknown
+      } | undefined
+      const code = typeof errorPayload?.code === 'string'
+        ? errorPayload.code
+        : response.status === 404
+          ? 'PRODUCT_NOT_FOUND'
+          : response.status === 400
+            ? 'INVALID_PRODUCT_IDENTIFIER'
+            : response.status === 504
+              ? 'API_TIMEOUT'
+              : response.status >= 500
+                ? 'API_UNAVAILABLE'
+                : 'INTERNAL_ERROR'
       throw new ProductApiError(
         response.status,
-        response.status === 404
-          ? 'Produto não encontrado.'
-          : 'Não foi possível consultar o produto. Tente novamente.'
+        typeof errorPayload?.message === 'string'
+          ? errorPayload.message
+          : code === 'PRODUCT_NOT_FOUND'
+            ? 'Produto não encontrado.'
+            : code === 'INVALID_PRODUCT_IDENTIFIER'
+              ? 'Identificador do produto inválido.'
+              : code === 'API_TIMEOUT'
+                ? 'A consulta comercial excedeu o tempo limite.'
+                : 'As informações comerciais estão temporariamente indisponíveis.',
+        code
       )
     }
 
-    const payload = await response.json() as {
-      success: boolean
-      data: JrsProduct
+    let payload: { success: boolean; data: JrsProduct }
+    try {
+      payload = await response.json() as { success: boolean; data: JrsProduct }
+    } catch {
+      throw new ProductApiError(502, 'O serviço retornou uma resposta inválida.', 'API_UNAVAILABLE')
     }
 
     const product = payload.data
@@ -163,7 +189,8 @@ async function requestProduct(
     ) {
       throw new ProductApiError(
         502,
-        'Não foi possível consultar o produto.'
+        'O serviço retornou dados inválidos para o produto.',
+        'API_UNAVAILABLE'
       )
     }
 
@@ -178,7 +205,8 @@ async function requestProduct(
 
     throw new ProductApiError(
       503,
-      'Serviço temporariamente indisponível. Tente novamente.'
+      'As informações comerciais estão temporariamente indisponíveis.',
+      'API_UNAVAILABLE'
     )
   }
 }

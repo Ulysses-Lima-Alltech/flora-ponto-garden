@@ -5,7 +5,7 @@ import { PlantKnowledgePanel } from '../components/products/PlantKnowledgePanel'
 import { CatalogProductImage } from '../components/products/CatalogProductImage'
 import { PageHeader } from '../components/ui/PageHeader'
 import { TouchButton } from '../components/ui/TouchButton'
-import { getPlantProfile, getSameCategoryProducts, isTopSeller } from '../data/products'
+import { getLegacyProductMetadata, getPlantProfile, getSameCategoryProducts, isTopSeller } from '../data/products'
 import { useKioskStore } from '../store/useKioskStore'
 import { fetchProductByReference, ProductApiError } from '../services/jrsApi'
 import type { Product, ProductCategory } from '../types/catalog'
@@ -20,14 +20,24 @@ const generalTips: Record<ProductCategory, string> = {
 export function ProductPage() {
   const navigate = useNavigate()
   const { productId = '' } = useParams()
-  const [lookup, setLookup] = useState<{ key: string; product?: Product; error?: string }>({ key: '' })
-  const product = lookup.key === productId ? lookup.product : undefined
+  const [lookup, setLookup] = useState<{ key: string; product?: Product; error?: string; errorStatus?: number; errorCode?: string }>({ key: '' })
+  const isCurrentLookup = lookup.key === productId
+  const localProduct = isCurrentLookup && (lookup.errorStatus ?? 0) >= 500
+    ? getLegacyProductMetadata(productId)
+    : undefined
+  const product = isCurrentLookup ? lookup.product ?? localProduct : undefined
+  const isUsingLocalProduct = Boolean(localProduct && !lookup.product)
   useEffect(() => {
     const controller = new AbortController()
     fetchProductByReference(productId, controller.signal).then((item) => {
       if (!controller.signal.aborted) setLookup({ key: productId, product: item })
     }).catch((error: unknown) => {
-      if (!controller.signal.aborted) setLookup({ key: productId, error: error instanceof ProductApiError ? error.message : 'Serviço indisponível. Tente novamente.' })
+      if (!controller.signal.aborted) setLookup({
+        key: productId,
+        error: error instanceof ProductApiError ? error.message : 'As informações comerciais estão temporariamente indisponíveis.',
+        errorStatus: error instanceof ProductApiError ? error.status : 503,
+        errorCode: error instanceof ProductApiError ? error.code : 'API_UNAVAILABLE',
+      })
     })
     return () => controller.abort()
   }, [productId])
@@ -44,7 +54,7 @@ export function ProductPage() {
   const [orderNotice, setOrderNotice] = useState('')
 
   useEffect(() => { if (product) recordViewedProduct(product.id) }, [product, recordViewedProduct])
-  if (!product) return <section className="content-page"><PageHeader title={lookup.key === productId && lookup.error ? 'Consulta indisponível' : 'Consultando produto'} /><p className="empty-state">{lookup.key === productId && lookup.error ? lookup.error : 'Consultando produto...'}</p><TouchButton variant="secondary" onClick={() => navigate('/scanner')}>Voltar ao leitor</TouchButton></section>
+  if (!product) return <section className="content-page"><PageHeader title={isCurrentLookup && lookup.error ? (lookup.errorCode === 'PRODUCT_NOT_FOUND' ? 'Produto não encontrado' : lookup.errorCode === 'INVALID_PRODUCT_IDENTIFIER' ? 'Identificador inválido' : 'Consulta indisponível') : 'Consultando produto'} /><p className="empty-state">{isCurrentLookup && lookup.error ? lookup.error : 'Consultando produto...'}</p><TouchButton variant="secondary" onClick={() => navigate('/scanner')}>Voltar ao leitor</TouchButton></section>
 
   const profile = getPlantProfile(product.plantProfileId)
   const sameCategoryProducts = profile ? [] : getSameCategoryProducts(product)
@@ -78,5 +88,5 @@ export function ProductPage() {
     setOrderNotice(orderQuantity > 0 ? 'Quantidade atualizada na sua lista.' : 'Adicionado à sua lista para mostrar ao vendedor.')
   }
 
-  return <section className="content-page"><PageHeader title={product.name} subtitle={product.categoryLabel} /><article className="catalog-product-detail"><CatalogProductImage src={product.image} alt={product.name} /><div><span className="product-category"><Tag aria-hidden="true" />{product.categoryLabel}{isTopSeller(product.id) && <b className="top-seller-badge"><TrendingUp aria-hidden="true" />Mais procurado</b>}</span><p>{product.description}</p><p>{product.availabilityConfirmed === false ? 'Disponibilidade não confirmada. Consulte um vendedor.' : product.available ? 'Disponível' : 'Indisponível'}</p>{!profile && <aside><Info aria-hidden="true" /><div><strong>Dica geral</strong><p>{generalTips[product.category]}</p></div></aside>}</div></article>{profile && <PlantKnowledgePanel product={product} profile={profile} />}{!profile && sameCategoryProducts.length > 0 && <section className="knowledge-section"><div className="knowledge-heading"><Leaf aria-hidden="true" /><h2>Você também pode gostar</h2></div><div className="knowledge-product-grid">{sameCategoryProducts.map((item) => <Link key={item.id} to={`/produto/${item.id}`}><CatalogProductImage src={item.image} alt="" /><div><span>{item.categoryLabel}</span><strong>{item.name}</strong></div></Link>)}</div></section>}<div className="detail-actions"><TouchButton variant="secondary" onClick={handleFavorite}><Heart aria-hidden="true" fill={isFavorite ? 'currentColor' : 'none'} /> {isFavorite ? 'Favorito salvo' : 'Salvar favorito'}</TouchButton>{canCompare && <TouchButton variant="secondary" onClick={handleComparison}><Scale aria-hidden="true" /> {isInComparison ? 'Remover da comparação' : 'Comparar'}</TouchButton>}<TouchButton variant="secondary" onClick={handleAddToOrder} disabled={!product.available}><ClipboardList aria-hidden="true" /> {orderQuantity > 0 ? `Na lista (${orderQuantity})` : 'Adicionar à lista'}</TouchButton></div>{orderNotice && <div className="comparison-selection-notice" role="status"><span>{orderNotice}</span><TouchButton variant="secondary" onClick={() => navigate('/pedido')}>Ver minha lista</TouchButton></div>}{comparisonNotice && canCompare && <div className="comparison-selection-notice" role="status"><span>{comparisonNotice}</span><div>{comparisonPlantIds.length < 2 && <TouchButton variant="secondary" onClick={() => navigate('/comparar')}>Escolher outra planta</TouchButton>}{comparisonPlantIds.length === 2 && <TouchButton variant="secondary" onClick={() => navigate('/comparar?view=results')}>Ver comparação</TouchButton>}</div></div>}{isFavoriteAccessPromptVisible && !activeCustomer && <div className="favorite-access-notice" role="status"><span>Acesse sua conta para salvar produtos favoritos.</span><TouchButton variant="secondary" onClick={() => navigate('/acesso')}>Ir para Meu Acesso</TouchButton></div>}</section>
+  return <section className="content-page"><PageHeader title={product.name} subtitle={product.categoryLabel} />{isUsingLocalProduct && <div className="scanner-feedback" role="status"><Info aria-hidden="true" /><span>{lookup.error} Exibindo o cadastro local. Preço, estoque e disponibilidade não foram confirmados.</span></div>}<article className="catalog-product-detail"><CatalogProductImage src={product.image} alt={product.name} /><div><span className="product-category"><Tag aria-hidden="true" />{product.categoryLabel}{isTopSeller(product.id) && <b className="top-seller-badge"><TrendingUp aria-hidden="true" />Mais procurado</b>}</span><p>{product.description}</p><p>{isUsingLocalProduct ? 'Dados comerciais indisponíveis. Consulte um vendedor.' : product.availabilityConfirmed === false ? 'Disponibilidade não confirmada. Consulte um vendedor.' : product.available ? 'Disponível' : 'Indisponível'}</p>{!profile && <aside><Info aria-hidden="true" /><div><strong>Dica geral</strong><p>{generalTips[product.category]}</p></div></aside>}</div></article>{profile && <PlantKnowledgePanel product={product} profile={profile} />}{!profile && sameCategoryProducts.length > 0 && <section className="knowledge-section"><div className="knowledge-heading"><Leaf aria-hidden="true" /><h2>Você também pode gostar</h2></div><div className="knowledge-product-grid">{sameCategoryProducts.map((item) => <Link key={item.id} to={`/produto/${item.id}`}><CatalogProductImage src={item.image} alt="" /><div><span>{item.categoryLabel}</span><strong>{item.name}</strong></div></Link>)}</div></section>}<div className="detail-actions"><TouchButton variant="secondary" onClick={handleFavorite}><Heart aria-hidden="true" fill={isFavorite ? 'currentColor' : 'none'} /> {isFavorite ? 'Favorito salvo' : 'Salvar favorito'}</TouchButton>{canCompare && <TouchButton variant="secondary" onClick={handleComparison}><Scale aria-hidden="true" /> {isInComparison ? 'Remover da comparação' : 'Comparar'}</TouchButton>}<TouchButton variant="secondary" onClick={handleAddToOrder} disabled={isUsingLocalProduct || !product.available}><ClipboardList aria-hidden="true" /> {orderQuantity > 0 ? `Na lista (${orderQuantity})` : 'Adicionar à lista'}</TouchButton></div>{orderNotice && <div className="comparison-selection-notice" role="status"><span>{orderNotice}</span><TouchButton variant="secondary" onClick={() => navigate('/pedido')}>Ver minha lista</TouchButton></div>}{comparisonNotice && canCompare && <div className="comparison-selection-notice" role="status"><span>{comparisonNotice}</span><div>{comparisonPlantIds.length < 2 && <TouchButton variant="secondary" onClick={() => navigate('/comparar')}>Escolher outra planta</TouchButton>}{comparisonPlantIds.length === 2 && <TouchButton variant="secondary" onClick={() => navigate('/comparar?view=results')}>Ver comparação</TouchButton>}</div></div>}{isFavoriteAccessPromptVisible && !activeCustomer && <div className="favorite-access-notice" role="status"><span>Acesse sua conta para salvar produtos favoritos.</span><TouchButton variant="secondary" onClick={() => navigate('/acesso')}>Ir para Meu Acesso</TouchButton></div>}</section>
 }
