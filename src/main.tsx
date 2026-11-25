@@ -1,3 +1,4 @@
+import { loadEnrichmentCatalog } from './services/enrichmentApi'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
@@ -9,3 +10,7 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter><AppRoutes /></BrowserRouter>
   </StrictMode>,
 )
+
+
+// Pre-carregar conhecimento botanico sem bloquear a interface.
+void loadEnrichmentCatalog()

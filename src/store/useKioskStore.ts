@@ -95,7 +95,7 @@ export const useKioskStore = create<KioskState>()(persist((set) => ({
   clearOrder: () => set({ orderItems: [] }),
   toggleComparisonPlant: (productId) => set((state) => {
     const product = getProductById(productId)
-    if (!product || product.category === 'fertilizers') return {}
+    if (!product || !['herbs-spices', 'flowers-plants'].includes(product.category)) return {}
     if (state.comparisonPlantIds.includes(productId)) return { comparisonPlantIds: state.comparisonPlantIds.filter((id) => id !== productId) }
     if (state.comparisonPlantIds.length >= 2) return {}
     return { comparisonPlantIds: [...state.comparisonPlantIds, productId] }

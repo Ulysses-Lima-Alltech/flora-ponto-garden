@@ -1,31 +1,21 @@
-import { getProductById } from '../data/products'
-
-// As etiquetas da loja usam EAN-13 interno: prefixo "2" + codigo do produto
-// (8 digitos, igual ao campo "Codigo" do ERP e ao nome do arquivo de imagem)
-// + 4 digitos finais (preco/checagem). Confirmado com etiquetas reais:
-// "2 000202 850005" -> produto 00020285 (GYPSOFILA MACO FLOR).
-const INTERNAL_EAN13_PREFIX = '2'
-const PRODUCT_CODE_LENGTH = 8
+import { fetchProductByBarcode, fetchProductByReference, fetchProductByCode, ProductApiError } from '../services/jrsApi'
 
 export function extractCandidateCodesFromScan(rawScan: string): string[] {
-  const digits = rawScan.replace(/\D/g, '')
-  const candidates = new Set<string>()
-
-  if (digits.length === 13 && digits.startsWith(INTERNAL_EAN13_PREFIX)) {
-    candidates.add(digits.slice(1, 1 + PRODUCT_CODE_LENGTH))
-  }
-
-  if (digits.length === PRODUCT_CODE_LENGTH) {
-    candidates.add(digits)
-  }
-
-  return [...candidates]
+  const code = rawScan.trim()
+  return code ? [code] : []
 }
 
-export function resolveProductFromScan(rawScan: string) {
-  for (const code of extractCandidateCodesFromScan(rawScan)) {
-    const product = getProductById(code)
-    if (product) return product
+export async function resolveProductFromScan(rawScan: string) {
+  const code = rawScan.trim()
+  if (!code || code.length > 64) throw new Error('Código inválido.')
+  if (/^\d{4}\.\d{4}$/.test(code)) return fetchProductByCode(code)
+  if (/^\d{8}$/.test(code)) {
+    // Entrada manual de referência ou EAN-8: primeiro referência, depois código de barras se 404.
+    try { return await fetchProductByReference(code) }
+    catch (error) {
+      if (!(error instanceof ProductApiError) || error.status !== 404) throw error
+      return fetchProductByBarcode(code)
+    }
   }
-  return undefined
+  return fetchProductByBarcode(code)
 }

@@ -23,7 +23,6 @@ function normalizeProduct(product: any) {
 
         unit: product.unit,
 
-        salePrice: product.salePrice ?? null,
 
         currentStock: product.currentStock ?? null,
 

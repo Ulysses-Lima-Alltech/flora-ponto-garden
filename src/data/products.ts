@@ -1,3 +1,8 @@
+import {
+  getCloudPlantProfile,
+  getCloudProductEnrichment,
+} from '../services/enrichmentApi'
+
 import type { CompatibilityRule, Product, ProductCategory, Recommendation } from '../types/catalog'
 import type { PlantComparisonFacts, PlantProfile } from '../types/plant-knowledge'
 import { plantProfiles as herbPlantProfiles, productPlantProfileIds as herbProductPlantProfileIds } from './plant-knowledge.generated'
@@ -15,12 +20,39 @@ export const products: Product[] = productsGenerated.map((product) => {
 export const compatibilityRules: CompatibilityRule[] = []
 export const recommendations: Recommendation[] = []
 
-export const getProductById = (id: string) => products.find((product) => product.id === id)
+// Cache de produtos confirmados pela JRS durante a sessao.
+const verifiedProducts = new Map<string, Product>()
+export const rememberJrsProduct = (product: Product) => {
+  verifiedProducts.set(product.id, product)
+}
+export const getProductById = (id: string) => verifiedProducts.get(id) ?? products.find((product) => product.id === id)
+// O cadastro legado serve apenas para recuperar metadados editoriais nesta etapa.
+export const getLegacyProductMetadata = (id: string) => products.find((product) => product.id === id)
 export const getProductsByCategory = (category: ProductCategory) => products.filter((product) => product.category === category)
 export const productCategories = [...new Set(products.map((product) => product.category))]
 
-export const getPlantProfile = (plantProfileId?: string) => plantProfiles.find((profile) => profile.id === plantProfileId)
-export const getProductsByPlantProfile = (plantProfileId: string) => products.filter((product) => product.plantProfileId === plantProfileId)
+export const getPlantProfile = (plantProfileId?: string) =>
+  getCloudPlantProfile(plantProfileId) ??
+  plantProfiles.find((profile) => profile.id === plantProfileId)
+const getEditorialProducts = (): Product[] =>
+  products.map((product) => {
+    const enrichment = getCloudProductEnrichment(product.code)
+
+    if (!enrichment) return product
+
+    return {
+      ...product,
+      image: enrichment.imageUrl || product.image,
+      description:
+        enrichment.complementaryDescription || product.description,
+      plantProfileId: enrichment.plantProfileId ?? undefined,
+    }
+  })
+
+export const getProductsByPlantProfile = (plantProfileId: string) =>
+  getEditorialProducts().filter(
+    (product) => product.plantProfileId === plantProfileId
+  )
 
 const topSellingProductIds = new Set(topSellingProductCodes)
 export const getSalesUnits = (productId: string) => salesUnitsByProductCode[productId] ?? 0
@@ -42,7 +74,7 @@ export const getPlantMatches = (profile: PlantProfile, kind: 'cultivation' | 'co
   }).sort((left, right) => right.score - left.score)
 }
 
-export const getRecommendedProductsForProfile = (profile: PlantProfile) => products.flatMap((product) => {
+export const getRecommendedProductsForProfile = (profile: PlantProfile) => getEditorialProducts().flatMap((product) => {
   const recommendation = profile.recommendedProducts.find((item) => item.productId === product.id)
   if (!recommendation || product.category !== 'fertilizers') return []
   return [{ product, ...recommendation }]
@@ -52,7 +84,7 @@ export const getRelatedProductsForProduct = (product: Product, excludedProductId
   const profile = getPlantProfile(product.plantProfileId)
   if (!profile) return []
   const relatedProfileIds = new Set([profile.id, ...profile.companionPlantProfileIds, ...profile.relatedPlantProfileIds])
-  return products.filter((candidate) => {
+  return getEditorialProducts().filter((candidate) => {
     if (candidate.id === product.id || excludedProductIds.includes(candidate.id) || !candidate.plantProfileId) return false
     const candidateProfile = getPlantProfile(candidate.plantProfileId)
     if (!candidateProfile) return false
@@ -62,7 +94,7 @@ export const getRelatedProductsForProduct = (product: Product, excludedProductId
 }
 
 export const getSameCategoryProducts = (product: Product, limit = 6) =>
-  products.filter((candidate) => candidate.category === product.category && candidate.id !== product.id).slice(0, limit)
+  getEditorialProducts().filter((candidate) => candidate.category === product.category && candidate.id !== product.id).slice(0, limit)
 
 export const getPlantComparisonFacts = (product: Product): PlantComparisonFacts | undefined => {
   const profile = getPlantProfile(product.plantProfileId)

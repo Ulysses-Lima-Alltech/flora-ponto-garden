@@ -44,19 +44,19 @@ export function ScannerPage() {
     }
   }, [scannerService])
 
-  const handleScannedValue = useCallback((rawValue: string) => {
+  const handleScannedValue = useCallback(async (rawValue: string) => {
     if (isResolvingRef.current) return
     isResolvingRef.current = true
-
-    const product = resolveProductFromScan(rawValue)
-    if (product) {
-      scannerService.stop()
+    setFeedback('Consultando produto')
+    try {
+      const product = await resolveProductFromScan(rawValue)
+      await scannerService.stop()
       navigate(`/produto/${product.id}`)
-      return
+    } catch (error) {
+      setFeedback(error instanceof Error ? error.message : 'Falha ao consultar produto.')
+    } finally {
+      isResolvingRef.current = false
     }
-
-    setFeedback(`Nenhum produto encontrado para o código lido (${rawValue}). Tente novamente ou digite o código manualmente.`)
-    isResolvingRef.current = false
   }, [navigate, scannerService])
 
   useEffect(() => {
@@ -75,7 +75,7 @@ export function ScannerPage() {
     setScanning(true)
     try {
       const result = await scannerService.scan()
-      if (result) handleScannedValue(result.value)
+      if (result) await handleScannedValue(result.value)
       else setFeedback(scannerMode === 'gertec' ? 'Leitura Gertec cancelada. Tente novamente ou use a entrada manual.' : 'Nenhum código foi lido. Tente novamente.')
     } catch (error) {
       const message = error instanceof Error ? error.message : undefined

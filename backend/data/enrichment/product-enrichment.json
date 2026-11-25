@@ -1,0 +1,3320 @@
+[
+  {
+    "codRef": "00021124",
+    "imageUrl": "/products/ervas-temperos/00021124.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "capim-limao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030472",
+    "imageUrl": "/products/ervas-temperos/00030472.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "alecrim-rasteiro",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030477",
+    "imageUrl": "/products/ervas-temperos/00030477.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "boldo-africano",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030479",
+    "imageUrl": "/products/ervas-temperos/00030479.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "boldo-miudo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030491",
+    "imageUrl": "/products/ervas-temperos/00030491.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "insulina",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030503",
+    "imageUrl": "/products/ervas-temperos/00030503.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "saiao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030507",
+    "imageUrl": "/products/ervas-temperos/00030507.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "trevo-de-quatro-folhas",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031567",
+    "imageUrl": "/products/ervas-temperos/00031567.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "alface",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031568",
+    "imageUrl": "/products/ervas-temperos/00031568.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "alface",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031576",
+    "imageUrl": "/products/ervas-temperos/00031576.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "acelga",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031577",
+    "imageUrl": "/products/ervas-temperos/00031577.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "alface",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031578",
+    "imageUrl": "/products/ervas-temperos/00031578.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "alface",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031672",
+    "imageUrl": "/products/ervas-temperos/00031672.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "incenso-mirra",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031689",
+    "imageUrl": "/products/ervas-temperos/00031689.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "agriao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031854",
+    "imageUrl": "/products/ervas-temperos/00031854.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "arnica-do-mato",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031878",
+    "imageUrl": "/products/ervas-temperos/00031878.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "artemisia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032092",
+    "imageUrl": "/products/ervas-temperos/00032092.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "alecrim-macho",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032150",
+    "imageUrl": "/products/ervas-temperos/00032150.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "manjericao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033251",
+    "imageUrl": "/products/ervas-temperos/00033251.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "anador",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033253",
+    "imageUrl": "/products/ervas-temperos/00033253.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "cana-do-brejo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033255",
+    "imageUrl": "/products/ervas-temperos/00033255.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "pariparoba",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033256",
+    "imageUrl": "/products/ervas-temperos/00033256.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "patchouli",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033292",
+    "imageUrl": "/products/ervas-temperos/00033292.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "tomilho-limao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033760",
+    "imageUrl": "/products/ervas-temperos/00033760.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "erva-de-gato",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00034347",
+    "imageUrl": "/products/ervas-temperos/00034347.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "endro",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035141",
+    "imageUrl": "/products/ervas-temperos/00035141.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "peixinho",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035451",
+    "imageUrl": "/products/ervas-temperos/00035451.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "cebolinha",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00042886",
+    "imageUrl": "/products/ervas-temperos/00042886.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "babosa-arborescens",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220004",
+    "imageUrl": "/products/ervas-temperos/00220004.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "nira",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220009",
+    "imageUrl": "/products/ervas-temperos/00220009.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "acelga",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220014",
+    "imageUrl": "/products/ervas-temperos/00220014.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "mirra-prateada",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220015",
+    "imageUrl": "/products/ervas-temperos/00220015.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "levante",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220018",
+    "imageUrl": "/products/ervas-temperos/00220018.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "balsamo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220020",
+    "imageUrl": "/products/ervas-temperos/00220020.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "mostarda",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220021",
+    "imageUrl": "/products/ervas-temperos/00220021.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "alfazema",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220022",
+    "imageUrl": "/products/ervas-temperos/00220022.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "boldo-indigena-aluma",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220025",
+    "imageUrl": "/products/ervas-temperos/00220025.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "alecrim",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220038",
+    "imageUrl": "/products/ervas-temperos/00220038.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "avelos",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220081",
+    "imageUrl": "/products/ervas-temperos/00220081.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "alfazema",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220281",
+    "imageUrl": "/products/ervas-temperos/00220281.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "cidreira-de-arvore",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220289",
+    "imageUrl": "/products/ervas-temperos/00220289.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "citronela",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220658",
+    "imageUrl": "/products/ervas-temperos/00220658.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "stevia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220743",
+    "imageUrl": "/products/ervas-temperos/00220743.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "berinjela",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220744",
+    "imageUrl": "/products/ervas-temperos/00220744.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "levante",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220760",
+    "imageUrl": "/products/ervas-temperos/00220760.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "melissa",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220761",
+    "imageUrl": "/products/ervas-temperos/00220761.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "guine",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220774",
+    "imageUrl": "/products/ervas-temperos/00220774.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "cebolinha",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220778",
+    "imageUrl": "/products/ervas-temperos/00220778.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "erva-luisa",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220779",
+    "imageUrl": "/products/ervas-temperos/00220779.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "gervao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220780",
+    "imageUrl": "/products/ervas-temperos/00220780.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "pimenta-biquinho",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220782",
+    "imageUrl": "/products/ervas-temperos/00220782.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "louro",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220793",
+    "imageUrl": "/products/ervas-temperos/00220793.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "coentro",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220794",
+    "imageUrl": "/products/ervas-temperos/00220794.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "cebolette",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220798",
+    "imageUrl": "/products/ervas-temperos/00220798.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "curry",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220800",
+    "imageUrl": "/products/ervas-temperos/00220800.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "cebolette",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220803",
+    "imageUrl": "/products/ervas-temperos/00220803.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "urtiga",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220805",
+    "imageUrl": "/products/ervas-temperos/00220805.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "stevia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220813",
+    "imageUrl": "/products/ervas-temperos/00220813.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "erva-baleeira",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220817",
+    "imageUrl": "/products/ervas-temperos/00220817.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "erva-baleeira",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220819",
+    "imageUrl": "/products/ervas-temperos/00220819.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "louro",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220821",
+    "imageUrl": "/products/ervas-temperos/00220821.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "alecrim",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220824",
+    "imageUrl": "/products/ervas-temperos/00220824.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "alface",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220825",
+    "imageUrl": "/products/ervas-temperos/00220825.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "pimenta-biquinho",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00220826",
+    "imageUrl": "/products/ervas-temperos/00220826.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "boldo-rasteiro",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020001",
+    "imageUrl": "/products/flores-plantas/00020001.webp",
+    "complementaryDescription": "CACTUS MINI S/ FLOR PT06 HOL MUDA",
+    "plantProfileId": "cacto",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020006",
+    "imageUrl": "/products/flores-plantas/00020006.webp",
+    "complementaryDescription": "POINSETIA VERMELHA PT15 FLOR MK",
+    "plantProfileId": "poinsetia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020028",
+    "imageUrl": "/products/flores-plantas/00020028.webp",
+    "complementaryDescription": "GERANIO COMUM PT11 FLOR",
+    "plantProfileId": "geranio",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020029",
+    "imageUrl": "/products/flores-plantas/00020029.webp",
+    "complementaryDescription": "GERANIO PEND PT11 FLOR",
+    "plantProfileId": "geranio-pendente",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020049",
+    "imageUrl": "/products/flores-plantas/00020049.webp",
+    "complementaryDescription": "GERBERA PT14 FLOR",
+    "plantProfileId": "gerbera",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020073",
+    "imageUrl": "/products/flores-plantas/00020073.webp",
+    "complementaryDescription": "VINCA PT11 FLOR",
+    "plantProfileId": "vinca",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020074",
+    "imageUrl": "/products/flores-plantas/00020074.webp",
+    "complementaryDescription": "HYPOESTE PT11 MUDA",
+    "plantProfileId": "hypoeste",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020075",
+    "imageUrl": "/products/flores-plantas/00020075.webp",
+    "complementaryDescription": "TAGETE COMUM PT11 FLOR",
+    "plantProfileId": "tagete",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020079",
+    "imageUrl": "/products/flores-plantas/00020079.webp",
+    "complementaryDescription": "CELOSIA PT11 FLOR YK",
+    "plantProfileId": "celosia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020082",
+    "imageUrl": "/products/flores-plantas/00020082.webp",
+    "complementaryDescription": "PERPETUA PT11 MUDA",
+    "plantProfileId": "perpetua",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020084",
+    "imageUrl": "/products/flores-plantas/00020084.webp",
+    "complementaryDescription": "BEIJO COMUM PT11 FLOR",
+    "plantProfileId": "beijo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020085",
+    "imageUrl": "/products/flores-plantas/00020085.webp",
+    "complementaryDescription": "CLOROFITO PT11 MUDA",
+    "plantProfileId": "clorofito",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020086",
+    "imageUrl": "/products/flores-plantas/00020086.webp",
+    "complementaryDescription": "PETUNIA PT11 FLOR YK",
+    "plantProfileId": "petunia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020087",
+    "imageUrl": "/products/flores-plantas/00020087.webp",
+    "complementaryDescription": "ERIKA PT11 FLOR",
+    "plantProfileId": "erika",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020088",
+    "imageUrl": "/products/flores-plantas/00020088.webp",
+    "complementaryDescription": "GAZANIA PT11 FLOR",
+    "plantProfileId": "gazania",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020089",
+    "imageUrl": "/products/flores-plantas/00020089.webp",
+    "complementaryDescription": "CINERARIA MARIT.F.LARGA PT11 YK MUDA",
+    "plantProfileId": "cineraria-maritima",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020091",
+    "imageUrl": "/products/flores-plantas/00020091.webp",
+    "complementaryDescription": "ALISSON PT11 FLOR",
+    "plantProfileId": "alisso",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020092",
+    "imageUrl": "/products/flores-plantas/00020092.webp",
+    "complementaryDescription": "VERBENA PT11 FLOR",
+    "plantProfileId": "verbena",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020107",
+    "imageUrl": "/products/flores-plantas/00020107.webp",
+    "complementaryDescription": "CRAVINA PT11 FLOR",
+    "plantProfileId": "cravina",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020127",
+    "imageUrl": "/products/flores-plantas/00020127.webp",
+    "complementaryDescription": "PIMENTA PT11 MUDA YK",
+    "plantProfileId": "pimenta-ornamental",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020136",
+    "imageUrl": "/products/flores-plantas/00020136.webp",
+    "complementaryDescription": "BRINCO DE PRINCESA PT14 FLOR",
+    "plantProfileId": "brinco-de-princesa",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020137",
+    "imageUrl": "/products/flores-plantas/00020137.webp",
+    "complementaryDescription": "SUCULENTA PT06 YK MUDA",
+    "plantProfileId": "suculenta",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020143",
+    "imageUrl": "/products/flores-plantas/00020143.webp",
+    "complementaryDescription": "ONZE HORAS BORDOEGA PT11 FLOR",
+    "plantProfileId": "onze-horas",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020194",
+    "imageUrl": "/products/flores-plantas/00020194.webp",
+    "complementaryDescription": "CATTLEYA ESPECIAL PT14 FLOR YK",
+    "plantProfileId": "cattleya",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020201",
+    "imageUrl": "/products/flores-plantas/00020201.webp",
+    "complementaryDescription": "LIRIO UNIDADE FLOR",
+    "plantProfileId": "lirio",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020209",
+    "imageUrl": "/products/flores-plantas/00020209.webp",
+    "complementaryDescription": "KALANCHOE DOBRADO PT15 FLOR",
+    "plantProfileId": "kalanchoe",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020210",
+    "imageUrl": "/products/flores-plantas/00020210.webp",
+    "complementaryDescription": "KALANCHOE DOBRADO PT11 FLOR",
+    "plantProfileId": "kalanchoe",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020211",
+    "imageUrl": "/products/flores-plantas/00020211.webp",
+    "complementaryDescription": "KALANCHOE COMUM PT06 FLOR",
+    "plantProfileId": "kalanchoe",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020212",
+    "imageUrl": "/products/flores-plantas/00020212.webp",
+    "complementaryDescription": "KALANCHOE DOBRADO PT06 FLOR",
+    "plantProfileId": "kalanchoe",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020213",
+    "imageUrl": "/products/flores-plantas/00020213.webp",
+    "complementaryDescription": "KALANCHOE COMUM PT15 FLOR",
+    "plantProfileId": "kalanchoe",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020215",
+    "imageUrl": "/products/flores-plantas/00020215.webp",
+    "complementaryDescription": "CRAVO VARIADO HASTE FLOR",
+    "plantProfileId": "cravo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020216",
+    "imageUrl": "/products/flores-plantas/00020216.webp",
+    "complementaryDescription": "FLOR DE MAIO PT11 FLOR",
+    "plantProfileId": "flor-de-maio",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020218",
+    "imageUrl": "/products/flores-plantas/00020218.webp",
+    "complementaryDescription": "ASTER MACO",
+    "plantProfileId": "aster",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020223",
+    "imageUrl": "/products/flores-plantas/00020223.webp",
+    "complementaryDescription": "FLOR DO CAMPO MISTO MACO (PINOQUIO)",
+    "plantProfileId": "flor-do-campo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020252",
+    "imageUrl": "/products/flores-plantas/00020252.webp",
+    "complementaryDescription": "PIMENTA MALAGUETA PT14 MUDA",
+    "plantProfileId": "pimenta-malagueta",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020257",
+    "imageUrl": "/products/flores-plantas/00020257.webp",
+    "complementaryDescription": "ROSA MINI PT11 FLOR",
+    "plantProfileId": "rosa-mini",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020268",
+    "imageUrl": "/products/flores-plantas/00020268.webp",
+    "complementaryDescription": "CAPIM LIMAO SC MUDA",
+    "plantProfileId": "capim-limao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020277",
+    "imageUrl": "/products/flores-plantas/00020277.webp",
+    "complementaryDescription": "CRISANTEMO PT15 FLOR",
+    "plantProfileId": "crisantemo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020278",
+    "imageUrl": "/products/flores-plantas/00020278.webp",
+    "complementaryDescription": "CRISANTEMO PT11 FLOR",
+    "plantProfileId": "crisantemo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020279",
+    "imageUrl": "/products/flores-plantas/00020279.webp",
+    "complementaryDescription": "CRISANTEMO PT13 FLOR",
+    "plantProfileId": "crisantemo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020282",
+    "imageUrl": "/products/flores-plantas/00020282.webp",
+    "complementaryDescription": "TANGO MACO",
+    "plantProfileId": "tango",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020283",
+    "imageUrl": "/products/flores-plantas/00020283.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "gerbera",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020285",
+    "imageUrl": "/products/flores-plantas/00020285.webp",
+    "complementaryDescription": "GYPSOFILA MACO FLOR",
+    "plantProfileId": "gypsofila",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020314",
+    "imageUrl": "/products/flores-plantas/00020314.webp",
+    "complementaryDescription": "KALANCHOE COMUM PT11 FLOR",
+    "plantProfileId": "kalanchoe",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020331",
+    "imageUrl": "/products/flores-plantas/00020331.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "rosa-corte",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020340",
+    "imageUrl": "/products/flores-plantas/00020340.webp",
+    "complementaryDescription": "TORENIA COMUM PT11 YK FLOR",
+    "plantProfileId": "torenia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020344",
+    "imageUrl": "/products/flores-plantas/00020344.webp",
+    "complementaryDescription": "LANTANA PT11 FLOR",
+    "plantProfileId": "lantana",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020359",
+    "imageUrl": "/products/flores-plantas/00020359.webp",
+    "complementaryDescription": "VIOLA PT11 YK FLOR",
+    "plantProfileId": "viola",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020363",
+    "imageUrl": "/products/flores-plantas/00020363.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "petalas-de-rosa",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020372",
+    "imageUrl": "/products/flores-plantas/00020372.webp",
+    "complementaryDescription": "GERANIO COMUM PT14 FLOR",
+    "plantProfileId": "geranio",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020379",
+    "imageUrl": "/products/flores-plantas/00020379.webp",
+    "complementaryDescription": "AMOR PERFEITO P11 FLOR",
+    "plantProfileId": "amor-perfeito",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020384",
+    "imageUrl": "/products/flores-plantas/00020384.webp",
+    "complementaryDescription": "ALSTROMELIA MÇ C/10 FAST",
+    "plantProfileId": "alstroemeria",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020385",
+    "imageUrl": "/products/flores-plantas/00020385.webp",
+    "complementaryDescription": "PIMENTA DEDO DE MOCA PT14 MUDA",
+    "plantProfileId": "pimenta-dedo-de-moca",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020413",
+    "imageUrl": "/products/flores-plantas/00020413.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "strelitzia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020426",
+    "imageUrl": "/products/flores-plantas/00020426.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "girassol",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020464",
+    "imageUrl": "/products/flores-plantas/00020464.webp",
+    "complementaryDescription": "EUCAFLOR (EUCALIPTO) MÇ",
+    "plantProfileId": "eucaflor",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020474",
+    "imageUrl": "/products/flores-plantas/00020474.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "cravo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020530",
+    "imageUrl": "/products/flores-plantas/00020530.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "rosa-corte",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020589",
+    "imageUrl": "/products/flores-plantas/00020589.webp",
+    "complementaryDescription": "BRINCO DE PRINCESA PT11 FLOR",
+    "plantProfileId": "brinco-de-princesa",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020687",
+    "imageUrl": "/products/flores-plantas/00020687.webp",
+    "complementaryDescription": "KALANCHOE DOBRADO PT09 FLOR",
+    "plantProfileId": "kalanchoe",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020692",
+    "imageUrl": "/products/flores-plantas/00020692.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "pleomele",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020770",
+    "imageUrl": "/products/flores-plantas/00020770.webp",
+    "complementaryDescription": "SUCULENTA PT06 MUDA FAST",
+    "plantProfileId": "suculenta",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020772",
+    "imageUrl": "/products/flores-plantas/00020772.webp",
+    "complementaryDescription": "CYMBIDIUM 1H PT17 FLOR",
+    "plantProfileId": "cymbidium",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020803",
+    "imageUrl": "/products/flores-plantas/00020803.webp",
+    "complementaryDescription": "POINSETIA VERMELHA PT11 FLOR HOL",
+    "plantProfileId": "poinsetia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020842",
+    "imageUrl": "/products/flores-plantas/00020842.webp",
+    "complementaryDescription": "PIMENTA SC MUDA",
+    "plantProfileId": "pimenta-ornamental",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020908",
+    "imageUrl": "/products/flores-plantas/00020908.webp",
+    "complementaryDescription": "AZALEIA PT09 FLOR",
+    "plantProfileId": "azaleia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020938",
+    "imageUrl": "/products/flores-plantas/00020938.webp",
+    "complementaryDescription": "PHALAENOPSIS 1999 FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020953",
+    "imageUrl": "/products/flores-plantas/00020953.webp",
+    "complementaryDescription": "VIOLETA ESPECIAL PT11 HOL FLOR",
+    "plantProfileId": "violeta",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00020983",
+    "imageUrl": "/products/flores-plantas/00020983.webp",
+    "complementaryDescription": "CELOSIA HAST FLOR",
+    "plantProfileId": "celosia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021037",
+    "imageUrl": "/products/flores-plantas/00021037.webp",
+    "complementaryDescription": "GIRASSOL PT11 FLOR",
+    "plantProfileId": "girassol",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021058",
+    "imageUrl": "/products/flores-plantas/00021058.webp",
+    "complementaryDescription": "PHALAENOPSIS 4999 FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021071",
+    "imageUrl": "/products/flores-plantas/00021071.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "rosa-corte",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021095",
+    "imageUrl": "/products/flores-plantas/00021095.webp",
+    "complementaryDescription": "PHALAENOPSIS 3499 FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021123",
+    "imageUrl": "/products/flores-plantas/00021123.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "dracena",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021407",
+    "imageUrl": "/products/flores-plantas/00021407.webp",
+    "complementaryDescription": "ROSA MINI RENATE PT13 FLOR",
+    "plantProfileId": "rosa-mini",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021482",
+    "imageUrl": "/products/flores-plantas/00021482.webp",
+    "complementaryDescription": "DENDROBIUM NOBILY PT09 HOL MUDA",
+    "plantProfileId": "dendrobium",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021517",
+    "imageUrl": "/products/flores-plantas/00021517.webp",
+    "complementaryDescription": "PHALAENOPSIS MINI PT09 FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021551",
+    "imageUrl": "/products/flores-plantas/00021551.webp",
+    "complementaryDescription": "PHALAENOPSIS MINI PT12 MUDA",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021609",
+    "imageUrl": "/products/flores-plantas/00021609.webp",
+    "complementaryDescription": "PRIMAVERA PT17  FLOR YK",
+    "plantProfileId": "primavera",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021665",
+    "imageUrl": "/products/flores-plantas/00021665.webp",
+    "complementaryDescription": "PHALAENOPSIS 2999 FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021746",
+    "imageUrl": "/products/flores-plantas/00021746.webp",
+    "complementaryDescription": "DENPHALE A1 PT14  FLOR",
+    "plantProfileId": "denphale",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021810",
+    "imageUrl": "/products/flores-plantas/00021810.webp",
+    "complementaryDescription": "PHALAENOPSIS 5499 FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021813",
+    "imageUrl": "/products/flores-plantas/00021813.webp",
+    "complementaryDescription": "PHALAENOPSIS 6499 FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021818",
+    "imageUrl": "/products/flores-plantas/00021818.webp",
+    "complementaryDescription": "ROSA SAMURAI ESPECIAL",
+    "plantProfileId": "rosa-mini",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021819",
+    "imageUrl": "/products/flores-plantas/00021819.webp",
+    "complementaryDescription": "GYPSOFILA MÇ ESPECIAL DV3",
+    "plantProfileId": "gypsofila",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021824",
+    "imageUrl": "/products/flores-plantas/00021824.webp",
+    "complementaryDescription": "PHALAENOPSIS 5999 FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00021861",
+    "imageUrl": "/products/flores-plantas/00021861.webp",
+    "complementaryDescription": "PHALAENOPSIS 2499 FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022169",
+    "imageUrl": "/products/flores-plantas/00022169.webp",
+    "complementaryDescription": "PHALAENOPSIS 6999 FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022196",
+    "imageUrl": "/products/flores-plantas/00022196.webp",
+    "complementaryDescription": "TANGO ESPECIAL DV2",
+    "plantProfileId": "tango",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022233",
+    "imageUrl": "/products/flores-plantas/00022233.webp",
+    "complementaryDescription": "RUSCUS MC",
+    "plantProfileId": "ruscus",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022253",
+    "imageUrl": "/products/flores-plantas/00022253.webp",
+    "complementaryDescription": "ROSA AZUL HOLAMBRA HASTE",
+    "plantProfileId": "rosa-corte",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022258",
+    "imageUrl": "/products/flores-plantas/00022258.webp",
+    "complementaryDescription": "FLOR DO CAMPO DV7",
+    "plantProfileId": "flor-do-campo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022335",
+    "imageUrl": "/products/flores-plantas/00022335.webp",
+    "complementaryDescription": "CALLA MINI PT09 MUDA HOL",
+    "plantProfileId": "calla-mini",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022452",
+    "imageUrl": "/products/flores-plantas/00022452.webp",
+    "complementaryDescription": "CRAVINA (DIANTHUS) DOB PT11 MUDA",
+    "plantProfileId": "cravina",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022465",
+    "imageUrl": "/products/flores-plantas/00022465.webp",
+    "complementaryDescription": "COLEUS F. LARGA PT11 YK MUDA",
+    "plantProfileId": "coleus",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022567",
+    "imageUrl": "/products/flores-plantas/00022567.webp",
+    "complementaryDescription": "ONZE HRS BORDO VARIEG PT11 MUDA YK",
+    "plantProfileId": "onze-horas",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022616",
+    "imageUrl": "/products/flores-plantas/00022616.webp",
+    "complementaryDescription": "ROSA MINI A2 PT13 HOL",
+    "plantProfileId": "rosa-mini",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022620",
+    "imageUrl": "/products/flores-plantas/00022620.webp",
+    "complementaryDescription": "CRISANTEMO MINI A2 PT11 MUDA HOL",
+    "plantProfileId": "crisantemo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022622",
+    "imageUrl": "/products/flores-plantas/00022622.webp",
+    "complementaryDescription": "CRISANTEMO MINI A2 PT13 MUDA HOL",
+    "plantProfileId": "crisantemo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022766",
+    "imageUrl": "/products/flores-plantas/00022766.webp",
+    "complementaryDescription": "CACTUS MINI C/FLOR ARTIFICIAIS PT06 MUDA",
+    "plantProfileId": "cacto",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00022771",
+    "imageUrl": "/products/flores-plantas/00022771.webp",
+    "complementaryDescription": "PHAL MINI 2H PT06 MUDA",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030141",
+    "imageUrl": "/products/flores-plantas/00030141.webp",
+    "complementaryDescription": "MORANGO SC MUDA",
+    "plantProfileId": "morango",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030209",
+    "imageUrl": "/products/flores-plantas/00030209.webp",
+    "complementaryDescription": "PEPEROMIA SCANDENS C21 MUDA",
+    "plantProfileId": "peperomia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030246",
+    "imageUrl": "/products/flores-plantas/00030246.webp",
+    "complementaryDescription": "BUXINHO BOLA PT24 MUDA",
+    "plantProfileId": "buxinho",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030358",
+    "imageUrl": "/products/flores-plantas/00030358.webp",
+    "complementaryDescription": "LIRIO DA PAZ PT11 MUDA",
+    "plantProfileId": "lirio-da-paz",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030372",
+    "imageUrl": "/products/flores-plantas/00030372.webp",
+    "complementaryDescription": "CLOROFITO SC C/15 MUDA",
+    "plantProfileId": "clorofito",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030377",
+    "imageUrl": "/products/flores-plantas/00030377.webp",
+    "complementaryDescription": "VINCA SC C/15 FLOR",
+    "plantProfileId": "vinca",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030395",
+    "imageUrl": "/products/flores-plantas/00030395.webp",
+    "complementaryDescription": "LAVANDA PT11 MUDA",
+    "plantProfileId": "lavanda",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030396",
+    "imageUrl": "/products/flores-plantas/00030396.webp",
+    "complementaryDescription": "HORTELA PT11 MUDA",
+    "plantProfileId": "hortela",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030398",
+    "imageUrl": "/products/flores-plantas/00030398.webp",
+    "complementaryDescription": "MANJERICAO VERDE PT11 MUDA",
+    "plantProfileId": "manjericao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030400",
+    "imageUrl": "/products/flores-plantas/00030400.webp",
+    "complementaryDescription": "ALECRIM PT11 MUDA",
+    "plantProfileId": "alecrim",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030405",
+    "imageUrl": "/products/flores-plantas/00030405.webp",
+    "complementaryDescription": "LANTANA ARBUSTIVA SC C/15 FLOR",
+    "plantProfileId": "lantana",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030425",
+    "imageUrl": "/products/flores-plantas/00030425.webp",
+    "complementaryDescription": "SUNPATIENS PT14 FLOR",
+    "plantProfileId": "sunpatiens",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030528",
+    "imageUrl": "/products/flores-plantas/00030528.webp",
+    "complementaryDescription": "CITRONELA SC MUDA",
+    "plantProfileId": "citronela",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030532",
+    "imageUrl": "/products/flores-plantas/00030532.webp",
+    "complementaryDescription": "GRAMA AMENDOIN CX/15  MUDA",
+    "plantProfileId": "grama-amendoim",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030549",
+    "imageUrl": "/products/flores-plantas/00030549.webp",
+    "complementaryDescription": "LIRIO DA PAZ PT15 FLOR",
+    "plantProfileId": "lirio-da-paz",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030681",
+    "imageUrl": "/products/flores-plantas/00030681.webp",
+    "complementaryDescription": "ROSA SACO FLOR",
+    "plantProfileId": "rosa",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030688",
+    "imageUrl": "/products/flores-plantas/00030688.webp",
+    "complementaryDescription": "ARRUDA PT14 MUDA",
+    "plantProfileId": "arruda",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030707",
+    "imageUrl": "/products/flores-plantas/00030707.webp",
+    "complementaryDescription": "CEBOLINHA SC MUDA",
+    "plantProfileId": "cebolinha",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030708",
+    "imageUrl": "/products/flores-plantas/00030708.webp",
+    "complementaryDescription": "SALSAO SC MUDA",
+    "plantProfileId": "salsao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030709",
+    "imageUrl": "/products/flores-plantas/00030709.webp",
+    "complementaryDescription": "ALFACE MIMOSA SC MUDA",
+    "plantProfileId": "alface",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030710",
+    "imageUrl": "/products/flores-plantas/00030710.webp",
+    "complementaryDescription": "OREGANO SC MUDA",
+    "plantProfileId": "oregano",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030711",
+    "imageUrl": "/products/flores-plantas/00030711.webp",
+    "complementaryDescription": "TOMILHO SC MUDA",
+    "plantProfileId": "tomilho",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030712",
+    "imageUrl": "/products/flores-plantas/00030712.webp",
+    "complementaryDescription": "SALSINHA SC MUDA",
+    "plantProfileId": "salsinha",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030713",
+    "imageUrl": "/products/flores-plantas/00030713.webp",
+    "complementaryDescription": "ERVA DOCE (FUNCHO) SC MUDA",
+    "plantProfileId": "funcho",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030716",
+    "imageUrl": "/products/flores-plantas/00030716.webp",
+    "complementaryDescription": "SALSA CRESPA SC MUDA",
+    "plantProfileId": "salsinha",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030751",
+    "imageUrl": "/products/flores-plantas/00030751.webp",
+    "complementaryDescription": "TAGETE COM CX C/15 MUDAS",
+    "plantProfileId": "tagete",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030752",
+    "imageUrl": "/products/flores-plantas/00030752.webp",
+    "complementaryDescription": "BEIJO COMUM SC C/15 FLOR",
+    "plantProfileId": "beijo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030759",
+    "imageUrl": "/products/flores-plantas/00030759.webp",
+    "complementaryDescription": "ECHEVERIA C21 MUDA",
+    "plantProfileId": "echeveria",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030805",
+    "imageUrl": "/products/flores-plantas/00030805.webp",
+    "complementaryDescription": "IXORIA MINI VERMELHA CX/15 MUDA FLOR",
+    "plantProfileId": "ixora",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030806",
+    "imageUrl": "/products/flores-plantas/00030806.webp",
+    "complementaryDescription": "ARRUDA SC MUDA",
+    "plantProfileId": "arruda",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030808",
+    "imageUrl": "/products/flores-plantas/00030808.webp",
+    "complementaryDescription": "COENTRO SC MUDA",
+    "plantProfileId": "coentro",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030831",
+    "imageUrl": "/products/flores-plantas/00030831.webp",
+    "complementaryDescription": "ERVAS AROMATICAS PT15 MUDA",
+    "plantProfileId": "ervas-aromaticas-mix",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030865",
+    "imageUrl": "/products/flores-plantas/00030865.webp",
+    "complementaryDescription": "ASPARGO CORTE MACO",
+    "plantProfileId": "aspargo-ornamental",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030876",
+    "imageUrl": "/products/flores-plantas/00030876.webp",
+    "complementaryDescription": "GRAMA ESMERALDA M2 MUDA",
+    "plantProfileId": "grama-esmeralda",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030892",
+    "imageUrl": "/products/flores-plantas/00030892.webp",
+    "complementaryDescription": "ECHEVERIA VARIADA PT09 MUDA HOL",
+    "plantProfileId": "echeveria",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030897",
+    "imageUrl": "/products/flores-plantas/00030897.webp",
+    "complementaryDescription": "COUVE SC MUDA",
+    "plantProfileId": "couve",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030898",
+    "imageUrl": "/products/flores-plantas/00030898.webp",
+    "complementaryDescription": "MANJERICAO VERDE SC MUDA",
+    "plantProfileId": "manjericao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030902",
+    "imageUrl": "/products/flores-plantas/00030902.webp",
+    "complementaryDescription": "RUCULA SC MUDA",
+    "plantProfileId": "rucula",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030949",
+    "imageUrl": "/products/flores-plantas/00030949.webp",
+    "complementaryDescription": "AZALEIA SC FLOR",
+    "plantProfileId": "azaleia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030980",
+    "imageUrl": "/products/flores-plantas/00030980.webp",
+    "complementaryDescription": "MELISSA SC MUDA",
+    "plantProfileId": "melissa",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030981",
+    "imageUrl": "/products/flores-plantas/00030981.webp",
+    "complementaryDescription": "GUINE SC MUDA",
+    "plantProfileId": "guine",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030997",
+    "imageUrl": "/products/flores-plantas/00030997.webp",
+    "complementaryDescription": "AGAPANTHUS PT3L  MUDA",
+    "plantProfileId": "agapanthus",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00030999",
+    "imageUrl": "/products/flores-plantas/00030999.webp",
+    "complementaryDescription": "TOMATE SC MUDA",
+    "plantProfileId": "tomate",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031014",
+    "imageUrl": "/products/flores-plantas/00031014.webp",
+    "complementaryDescription": "DAHLIA PT14 FLOR HOL",
+    "plantProfileId": "dalia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031024",
+    "imageUrl": "/products/flores-plantas/00031024.webp",
+    "complementaryDescription": "CAPUCHINHO SC MUDA",
+    "plantProfileId": "capuchinho",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031089",
+    "imageUrl": "/products/flores-plantas/00031089.webp",
+    "complementaryDescription": "CENOURA SC MUDA",
+    "plantProfileId": "cenoura",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031123",
+    "imageUrl": "/products/flores-plantas/00031123.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "dracena-sanderiana",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031173",
+    "imageUrl": "/products/flores-plantas/00031173.webp",
+    "complementaryDescription": "ALFACE AMERICANA SC MUDA",
+    "plantProfileId": "alface",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031175",
+    "imageUrl": "/products/flores-plantas/00031175.webp",
+    "complementaryDescription": "BETERRABA SC MUDA",
+    "plantProfileId": "beterraba",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031196",
+    "imageUrl": "/products/flores-plantas/00031196.webp",
+    "complementaryDescription": "HORTELA PT14 MUDA",
+    "plantProfileId": "hortela",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031208",
+    "imageUrl": "/products/flores-plantas/00031208.webp",
+    "complementaryDescription": "ERVA CIDREIRA SC MUDA",
+    "plantProfileId": "melissa",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031233",
+    "imageUrl": "/products/flores-plantas/00031233.webp",
+    "complementaryDescription": "ALFACE CRESPA SC MUDA",
+    "plantProfileId": "alface",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031282",
+    "imageUrl": "/products/flores-plantas/00031282.webp",
+    "complementaryDescription": "CANFORA SC MUDA",
+    "plantProfileId": "canfora",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031283",
+    "imageUrl": "/products/flores-plantas/00031283.webp",
+    "complementaryDescription": "MENTA SC MUDA",
+    "plantProfileId": "menta",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031306",
+    "imageUrl": "/products/flores-plantas/00031306.webp",
+    "complementaryDescription": "HORTELA SC MUDA",
+    "plantProfileId": "hortela",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031361",
+    "imageUrl": "/products/flores-plantas/00031361.webp",
+    "complementaryDescription": "GRAMA DE GATO PT11 MUDA",
+    "plantProfileId": "grama-de-gato",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031391",
+    "imageUrl": "/products/flores-plantas/00031391.webp",
+    "complementaryDescription": "OREGANO PT11 MUDA",
+    "plantProfileId": "oregano",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031411",
+    "imageUrl": "/products/flores-plantas/00031411.webp",
+    "complementaryDescription": "ARRUDA PT11 MUDA",
+    "plantProfileId": "arruda",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031413",
+    "imageUrl": "/products/flores-plantas/00031413.webp",
+    "complementaryDescription": "CAMOMILA SC MUDA",
+    "plantProfileId": "camomila",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031481",
+    "imageUrl": "/products/flores-plantas/00031481.webp",
+    "complementaryDescription": "AZALEIA PT14 HOL FLOR",
+    "plantProfileId": "azaleia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031541",
+    "imageUrl": "/products/flores-plantas/00031541.webp",
+    "complementaryDescription": "ALMEIRAO SC MUDA",
+    "plantProfileId": "almeirao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031569",
+    "imageUrl": "/products/flores-plantas/00031569.webp",
+    "complementaryDescription": "ALFACE ROXA CRESPA BANDEJA C/25 MUDA",
+    "plantProfileId": "alface",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031572",
+    "imageUrl": "/products/flores-plantas/00031572.webp",
+    "complementaryDescription": "CEBOLINHA COMUM BANDEJA C/25 MUDA",
+    "plantProfileId": "cebolinha",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031575",
+    "imageUrl": "/products/flores-plantas/00031575.webp",
+    "complementaryDescription": "TOMILHO LIMAO SC MUDA",
+    "plantProfileId": "tomilho-limao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031580",
+    "imageUrl": "/products/flores-plantas/00031580.webp",
+    "complementaryDescription": "SALSA BANDEJA C/ 25 MUDA",
+    "plantProfileId": "salsinha",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031639",
+    "imageUrl": "/products/flores-plantas/00031639.webp",
+    "complementaryDescription": "GRAMA ANA RAIZ CX MUDA",
+    "plantProfileId": "grama-ana",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031699",
+    "imageUrl": "/products/flores-plantas/00031699.webp",
+    "complementaryDescription": "ALECRIM SC MUDA",
+    "plantProfileId": "alecrim",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031800",
+    "imageUrl": "/products/flores-plantas/00031800.webp",
+    "complementaryDescription": "ROSA DO DESERTO PT15 FLOR HOL",
+    "plantProfileId": "rosa-do-deserto",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031806",
+    "imageUrl": "/products/flores-plantas/00031806.webp",
+    "complementaryDescription": "BRILHANTINA PT11 MUDA",
+    "plantProfileId": "brilhantina",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031834",
+    "imageUrl": "/products/flores-plantas/00031834.webp",
+    "complementaryDescription": "ABRE CAMINHO SC MUDA",
+    "plantProfileId": "abre-caminho",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031835",
+    "imageUrl": "/products/flores-plantas/00031835.webp",
+    "complementaryDescription": "HORTELA PIMENTA SC MUDA",
+    "plantProfileId": "menta",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031841",
+    "imageUrl": "/products/flores-plantas/00031841.webp",
+    "complementaryDescription": "ALFAZEMA SC MUDA",
+    "plantProfileId": "alfazema",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031950",
+    "imageUrl": "/products/flores-plantas/00031950.webp",
+    "complementaryDescription": "SEDUM VARIADO PT11 MUDA",
+    "plantProfileId": "sedum",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00031964",
+    "imageUrl": "/products/flores-plantas/00031964.webp",
+    "complementaryDescription": "HYPOESTE C13 MUDA",
+    "plantProfileId": "hypoeste",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032075",
+    "imageUrl": "/products/flores-plantas/00032075.webp",
+    "complementaryDescription": "ESCAROLA (CHICORIA) SC MUDA",
+    "plantProfileId": "escarola",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032107",
+    "imageUrl": "/products/flores-plantas/00032107.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "crisantemo-corte",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032109",
+    "imageUrl": "/products/flores-plantas/00032109.webp",
+    "complementaryDescription": "REPOLHO SC MUDA",
+    "plantProfileId": "repolho",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032110",
+    "imageUrl": "/products/flores-plantas/00032110.webp",
+    "complementaryDescription": "AGRIAO SC MUDA",
+    "plantProfileId": "agriao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032111",
+    "imageUrl": "/products/flores-plantas/00032111.webp",
+    "complementaryDescription": "ESPINAFRE SC MUDA",
+    "plantProfileId": "espinafre",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032123",
+    "imageUrl": "/products/flores-plantas/00032123.webp",
+    "complementaryDescription": "SUCULENTA PT11 YK MUDA",
+    "plantProfileId": "suculenta",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032155",
+    "imageUrl": "/products/flores-plantas/00032155.webp",
+    "complementaryDescription": "JILO SC MUDA",
+    "plantProfileId": "jilo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032192",
+    "imageUrl": "/products/flores-plantas/00032192.webp",
+    "complementaryDescription": "ALHO PORO SC MUDA",
+    "plantProfileId": "alho-poro",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032209",
+    "imageUrl": "/products/flores-plantas/00032209.webp",
+    "complementaryDescription": "BERINJELA SC MUDA",
+    "plantProfileId": "berinjela",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032219",
+    "imageUrl": "/products/flores-plantas/00032219.webp",
+    "complementaryDescription": "MANJERICAO ROXO SC MUDA",
+    "plantProfileId": "manjericao-roxo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032290",
+    "imageUrl": "/products/flores-plantas/00032290.webp",
+    "complementaryDescription": "RAPHIS PT17 HOL MUDA",
+    "plantProfileId": "raphis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032298",
+    "imageUrl": "/products/flores-plantas/00032298.webp",
+    "complementaryDescription": "COUVE FLOR SC MUDA",
+    "plantProfileId": "couve",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032327",
+    "imageUrl": "/products/flores-plantas/00032327.webp",
+    "complementaryDescription": "ALFACE ROXA SC MUDA",
+    "plantProfileId": "alface",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032341",
+    "imageUrl": "/products/flores-plantas/00032341.webp",
+    "complementaryDescription": "LIRIO HASTE FAST UN",
+    "plantProfileId": "lirio",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032348",
+    "imageUrl": "/products/flores-plantas/00032348.webp",
+    "complementaryDescription": "SALVIA TEMPERO SC MUDA",
+    "plantProfileId": "salvia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032359",
+    "imageUrl": "/products/flores-plantas/00032359.webp",
+    "complementaryDescription": "SUCULENTA VARIADA PT09 MUDA",
+    "plantProfileId": "suculenta",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032369",
+    "imageUrl": "/products/flores-plantas/00032369.webp",
+    "complementaryDescription": "BROCOLIS SC MUDA",
+    "plantProfileId": "brocolis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032392",
+    "imageUrl": "/products/flores-plantas/00032392.webp",
+    "complementaryDescription": "PEPINO SC MUDA",
+    "plantProfileId": "pepino",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032415",
+    "imageUrl": "/products/flores-plantas/00032415.webp",
+    "complementaryDescription": "POINSETIA VERMELHA PT11 FLOR MK",
+    "plantProfileId": "poinsetia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032435",
+    "imageUrl": "/products/flores-plantas/00032435.webp",
+    "complementaryDescription": "ALFACE LISA SC MUDA",
+    "plantProfileId": "alface",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032496",
+    "imageUrl": "/products/flores-plantas/00032496.webp",
+    "complementaryDescription": "DIANTHUS PINK KISSES PT11 FLOR HOL",
+    "plantProfileId": "cravina",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032512",
+    "imageUrl": "/products/flores-plantas/00032512.webp",
+    "complementaryDescription": "ANTURIO VARIADO PT12 FLOR",
+    "plantProfileId": "anturio",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032697",
+    "imageUrl": "/products/flores-plantas/00032697.webp",
+    "complementaryDescription": "PHALAENOPSIS 3999 FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032729",
+    "imageUrl": "/products/flores-plantas/00032729.webp",
+    "complementaryDescription": "MANACA DA SERRA SC MUDA",
+    "plantProfileId": "manaca-da-serra",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032770",
+    "imageUrl": "/products/flores-plantas/00032770.webp",
+    "complementaryDescription": "ZAMIOCULCAS ESPECIAL PT17 MUDA",
+    "plantProfileId": "zamioculcas",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032824",
+    "imageUrl": "/products/flores-plantas/00032824.webp",
+    "complementaryDescription": "PIMENTAO SC MUDA",
+    "plantProfileId": "pimentao",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00032834",
+    "imageUrl": "/products/flores-plantas/00032834.webp",
+    "complementaryDescription": "POEJO SC MUDA",
+    "plantProfileId": "poejo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033074",
+    "imageUrl": "/products/flores-plantas/00033074.webp",
+    "complementaryDescription": "ROSA DO DESERTO PT11 MUDA",
+    "plantProfileId": "rosa-do-deserto",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033116",
+    "imageUrl": "/products/flores-plantas/00033116.webp",
+    "complementaryDescription": "PEPEROMIA MINI PT11 MUDA",
+    "plantProfileId": "peperomia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033140",
+    "imageUrl": "/products/flores-plantas/00033140.webp",
+    "complementaryDescription": "QUIABO SC MUDA",
+    "plantProfileId": "quiabo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033176",
+    "imageUrl": "/products/flores-plantas/00033176.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "monstera",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033288",
+    "imageUrl": "/products/flores-plantas/00033288.webp",
+    "complementaryDescription": "PIMENTA PT06 HOL MUDA",
+    "plantProfileId": "pimenta-ornamental",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033322",
+    "imageUrl": "/products/flores-plantas/00033322.webp",
+    "complementaryDescription": "HYPOESTE PT06 MUDA",
+    "plantProfileId": "hypoeste",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033323",
+    "imageUrl": "/products/flores-plantas/00033323.webp",
+    "complementaryDescription": null,
+    "plantProfileId": "manjerona",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033335",
+    "imageUrl": "/products/flores-plantas/00033335.webp",
+    "complementaryDescription": "LAVANDA SC MUDA",
+    "plantProfileId": "lavanda",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033393",
+    "imageUrl": "/products/flores-plantas/00033393.webp",
+    "complementaryDescription": "GUACO SC MUDA",
+    "plantProfileId": "guaco",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033486",
+    "imageUrl": "/products/flores-plantas/00033486.webp",
+    "complementaryDescription": "BEIJO DOBRADO PT11 FLOR",
+    "plantProfileId": "beijo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033575",
+    "imageUrl": "/products/flores-plantas/00033575.webp",
+    "complementaryDescription": "HOYA TRICOLOR PT14 MUDA",
+    "plantProfileId": "hoya",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033576",
+    "imageUrl": "/products/flores-plantas/00033576.webp",
+    "complementaryDescription": "COUVE MANTEIGA SC MUDA",
+    "plantProfileId": "couve",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033608",
+    "imageUrl": "/products/flores-plantas/00033608.webp",
+    "complementaryDescription": "ONZE HORAS DOBRADA PT11 FLOR",
+    "plantProfileId": "onze-horas",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033638",
+    "imageUrl": "/products/flores-plantas/00033638.webp",
+    "complementaryDescription": "CYCLAMEN PT14 FLOR HOL",
+    "plantProfileId": "cyclamen",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033688",
+    "imageUrl": "/products/flores-plantas/00033688.webp",
+    "complementaryDescription": "PHALAENOPSIS 7499 FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033806",
+    "imageUrl": "/products/flores-plantas/00033806.webp",
+    "complementaryDescription": "ONZE HORAS COMUM PT11 FLOR",
+    "plantProfileId": "onze-horas",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033843",
+    "imageUrl": "/products/flores-plantas/00033843.webp",
+    "complementaryDescription": "MONSTERA DELIC(COST ADAO) PT24 MUDA",
+    "plantProfileId": "monstera",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00033958",
+    "imageUrl": "/products/flores-plantas/00033958.webp",
+    "complementaryDescription": "MOREIA BRANCA PT17 MUDA",
+    "plantProfileId": "moreia-branca",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00034066",
+    "imageUrl": "/products/flores-plantas/00034066.webp",
+    "complementaryDescription": "HOYA TRICOLOR PT11 MUDA",
+    "plantProfileId": "hoya",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00034094",
+    "imageUrl": "/products/flores-plantas/00034094.webp",
+    "complementaryDescription": "GIRASSOL MINI PT15 FLOR HOL",
+    "plantProfileId": "girassol",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00034170",
+    "imageUrl": "/products/flores-plantas/00034170.webp",
+    "complementaryDescription": "CACTUS MINI PT09  MUDA",
+    "plantProfileId": "cacto",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00034224",
+    "imageUrl": "/products/flores-plantas/00034224.webp",
+    "complementaryDescription": "SALSINHA PT11 MUDA",
+    "plantProfileId": "salsinha",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00034226",
+    "imageUrl": "/products/flores-plantas/00034226.webp",
+    "complementaryDescription": "SUCULENTA C13 MUDA",
+    "plantProfileId": "suculenta",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00034334",
+    "imageUrl": "/products/flores-plantas/00034334.webp",
+    "complementaryDescription": "CYCLAMEN MINI PT11 HOL FLOR",
+    "plantProfileId": "cyclamen",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00034344",
+    "imageUrl": "/products/flores-plantas/00034344.webp",
+    "complementaryDescription": "HOYA TRICOLOR PT09 MUDA",
+    "plantProfileId": "hoya",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00034926",
+    "imageUrl": "/products/flores-plantas/00034926.webp",
+    "complementaryDescription": "ZAMIOCULCAS PT14 MUDA",
+    "plantProfileId": "zamioculcas",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00034960",
+    "imageUrl": "/products/flores-plantas/00034960.webp",
+    "complementaryDescription": "SUNPATIENS PT24 FLOR",
+    "plantProfileId": "sunpatiens",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035001",
+    "imageUrl": "/products/flores-plantas/00035001.webp",
+    "complementaryDescription": "RAPHIS ESPECIAL PT24 MUDA",
+    "plantProfileId": "raphis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035112",
+    "imageUrl": "/products/flores-plantas/00035112.webp",
+    "complementaryDescription": "CRISANTEMO BOLA BELGA PT11 FLOR",
+    "plantProfileId": "crisantemo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035157",
+    "imageUrl": "/products/flores-plantas/00035157.webp",
+    "complementaryDescription": "DENPHALE MINI VS QUADRADO PT12 FLOR",
+    "plantProfileId": "denphale",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035164",
+    "imageUrl": "/products/flores-plantas/00035164.webp",
+    "complementaryDescription": "ANTURIO VARIADO PT09 FLOR",
+    "plantProfileId": "anturio",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035210",
+    "imageUrl": "/products/flores-plantas/00035210.webp",
+    "complementaryDescription": "SUNPATIENS PT11 FLOR",
+    "plantProfileId": "sunpatiens",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035232",
+    "imageUrl": "/products/flores-plantas/00035232.webp",
+    "complementaryDescription": "SUNPATIENS PT13 FLOR",
+    "plantProfileId": "sunpatiens",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035242",
+    "imageUrl": "/products/flores-plantas/00035242.webp",
+    "complementaryDescription": "ROSA DO DESERTO S/ FLOR P06 MUDA",
+    "plantProfileId": "rosa-do-deserto",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035328",
+    "imageUrl": "/products/flores-plantas/00035328.webp",
+    "complementaryDescription": "SUCULENTA PT09 YK MUDA",
+    "plantProfileId": "suculenta",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035350",
+    "imageUrl": "/products/flores-plantas/00035350.webp",
+    "complementaryDescription": "CRISANTEMO VS BARRO PT15 FLOR",
+    "plantProfileId": "crisantemo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035486",
+    "imageUrl": "/products/flores-plantas/00035486.webp",
+    "complementaryDescription": "COENTRO PT11 MUDA",
+    "plantProfileId": "coentro",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035525",
+    "imageUrl": "/products/flores-plantas/00035525.webp",
+    "complementaryDescription": "CROTON HIB PETRA PT11 MUDA",
+    "plantProfileId": "croton",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035536",
+    "imageUrl": "/products/flores-plantas/00035536.webp",
+    "complementaryDescription": "PEPEROMIA MINI C13 MUDA",
+    "plantProfileId": "peperomia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035548",
+    "imageUrl": "/products/flores-plantas/00035548.webp",
+    "complementaryDescription": "ANTURIO RED SUCCESS PT09 MUDA",
+    "plantProfileId": "anturio",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035549",
+    "imageUrl": "/products/flores-plantas/00035549.webp",
+    "complementaryDescription": "LIRIO DA PAZ PT07 MUDA",
+    "plantProfileId": "lirio-da-paz",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035561",
+    "imageUrl": "/products/flores-plantas/00035561.webp",
+    "complementaryDescription": "HOYA TRICOLOR PT06 MUDA",
+    "plantProfileId": "hoya",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035712",
+    "imageUrl": "/products/flores-plantas/00035712.webp",
+    "complementaryDescription": "ECHEVERIA PT11 MUDA YK",
+    "plantProfileId": "echeveria",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035785",
+    "imageUrl": "/products/flores-plantas/00035785.webp",
+    "complementaryDescription": "VIOLETA DOBRADA PT11 HOL FLOR",
+    "plantProfileId": "violeta",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035815",
+    "imageUrl": "/products/flores-plantas/00035815.webp",
+    "complementaryDescription": "HOYA TRICOLOR SC C/15 MUDA",
+    "plantProfileId": "hoya",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00035952",
+    "imageUrl": "/products/flores-plantas/00035952.webp",
+    "complementaryDescription": "FITONIA VARIADA PT06 FLOR HOL",
+    "plantProfileId": "fitonia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036045",
+    "imageUrl": "/products/flores-plantas/00036045.webp",
+    "complementaryDescription": "CARPETE DOURADO PT11 MUDA",
+    "plantProfileId": "carpete-dourado",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036061",
+    "imageUrl": "/products/flores-plantas/00036061.webp",
+    "complementaryDescription": "PHAL MINI 2H PT09 HOL FLOR",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036095",
+    "imageUrl": "/products/flores-plantas/00036095.webp",
+    "complementaryDescription": "DIPLADENIA VARIADA PT15 FLOR HOL",
+    "plantProfileId": "dipladenia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036097",
+    "imageUrl": "/products/flores-plantas/00036097.webp",
+    "complementaryDescription": "PHAL MINI 3H PT09 HOL MUDA",
+    "plantProfileId": "orquidea-phalaenopsis",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036176",
+    "imageUrl": "/products/flores-plantas/00036176.webp",
+    "complementaryDescription": "IPOMEIA BLACK PT11 MUDA",
+    "plantProfileId": "ipomeia-black",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036233",
+    "imageUrl": "/products/flores-plantas/00036233.webp",
+    "complementaryDescription": "ANTURIO MINI MILLION FLOWERS PT09 HOL MUDA",
+    "plantProfileId": "anturio",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036268",
+    "imageUrl": "/products/flores-plantas/00036268.webp",
+    "complementaryDescription": "PRIMAVERA VARIEGATA PT14 MUDA",
+    "plantProfileId": "primavera",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036273",
+    "imageUrl": "/products/flores-plantas/00036273.webp",
+    "complementaryDescription": "SUNPATIENS SC C/15 MUDA",
+    "plantProfileId": "sunpatiens",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036377",
+    "imageUrl": "/products/flores-plantas/00036377.webp",
+    "complementaryDescription": "TULIPA PT12 HOL MUDA",
+    "plantProfileId": "tulipa",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036433",
+    "imageUrl": "/products/flores-plantas/00036433.webp",
+    "complementaryDescription": "PETUNIA PT13 MUDA",
+    "plantProfileId": "petunia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036497",
+    "imageUrl": "/products/flores-plantas/00036497.webp",
+    "complementaryDescription": "ECHEVERIA MINI PT06 HOL MUDA",
+    "plantProfileId": "echeveria",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036502",
+    "imageUrl": "/products/flores-plantas/00036502.webp",
+    "complementaryDescription": "ROSA MINI PT06 HOL MUDA",
+    "plantProfileId": "rosa-mini",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036610",
+    "imageUrl": "/products/flores-plantas/00036610.webp",
+    "complementaryDescription": "COUVE FOLHA MANTEIGA BJA C/25 MUDA",
+    "plantProfileId": "couve",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036627",
+    "imageUrl": "/products/flores-plantas/00036627.webp",
+    "complementaryDescription": "SAMAMBAIA AMERICANA ESP C25 MUDA",
+    "plantProfileId": "samambaia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036859",
+    "imageUrl": "/products/flores-plantas/00036859.webp",
+    "complementaryDescription": "TRANDESCANTIA ZEBRINA ROXO C21 HOL MUDA",
+    "plantProfileId": "trandescantia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00036882",
+    "imageUrl": "/products/flores-plantas/00036882.webp",
+    "complementaryDescription": "LAVANDA PT15 HOL MUDA",
+    "plantProfileId": "lavanda",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00037079",
+    "imageUrl": "/products/flores-plantas/00037079.webp",
+    "complementaryDescription": "ALFACE ROMANA SC MUDA",
+    "plantProfileId": "alface",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00037457",
+    "imageUrl": "/products/flores-plantas/00037457.webp",
+    "complementaryDescription": "ZAMIOCULCAS PT09 MUDA",
+    "plantProfileId": "zamioculcas",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00037473",
+    "imageUrl": "/products/flores-plantas/00037473.webp",
+    "complementaryDescription": "BEGONIA REX(BELEAF) PT11 MUDA HOL",
+    "plantProfileId": "begonia-rex",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00037482",
+    "imageUrl": "/products/flores-plantas/00037482.webp",
+    "complementaryDescription": "ANTURIO VARIADO PT06 MUDA",
+    "plantProfileId": "anturio",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00037582",
+    "imageUrl": "/products/flores-plantas/00037582.webp",
+    "complementaryDescription": "ECHEVERIA PT06 YK MUDA",
+    "plantProfileId": "echeveria",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00037598",
+    "imageUrl": "/products/flores-plantas/00037598.webp",
+    "complementaryDescription": "AVENCA VARIADA PT14 HOL MUDA",
+    "plantProfileId": "avenca",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00037601",
+    "imageUrl": "/products/flores-plantas/00037601.webp",
+    "complementaryDescription": "LIRIO VARIADO PT15 MUDA",
+    "plantProfileId": "lirio",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00037605",
+    "imageUrl": "/products/flores-plantas/00037605.webp",
+    "complementaryDescription": "ABOBRINHA SC MUDA",
+    "plantProfileId": "abobrinha",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00037895",
+    "imageUrl": "/products/flores-plantas/00037895.webp",
+    "complementaryDescription": "MINI ROSA SC MUDA",
+    "plantProfileId": "rosa-mini",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00038010",
+    "imageUrl": "/products/flores-plantas/00038010.webp",
+    "complementaryDescription": "MANJERICAO ROXO ITALIANO SC MUDA",
+    "plantProfileId": "manjericao-roxo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00038150",
+    "imageUrl": "/products/flores-plantas/00038150.webp",
+    "complementaryDescription": "SUCULENTA ESPECIAL PT09 MUDA",
+    "plantProfileId": "suculenta",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00038421",
+    "imageUrl": "/products/flores-plantas/00038421.webp",
+    "complementaryDescription": "CRIS BOLA BELGA JASODA PT11 HOL FLOR",
+    "plantProfileId": "crisantemo",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00038676",
+    "imageUrl": "/products/flores-plantas/00038676.webp",
+    "complementaryDescription": "AZALEIA A2 PT09 FLOR",
+    "plantProfileId": "azaleia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00038702",
+    "imageUrl": "/products/flores-plantas/00038702.webp",
+    "complementaryDescription": "JIBOIA NJOY PT06 MUDA HOL",
+    "plantProfileId": "jiboia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00038782",
+    "imageUrl": "/products/flores-plantas/00038782.webp",
+    "complementaryDescription": "BEAUCARNEA RECURV PT06 HOL MUDA",
+    "plantProfileId": "beaucarnea",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00038825",
+    "imageUrl": "/products/flores-plantas/00038825.webp",
+    "complementaryDescription": "LIRIO VARIADO QUADRAD PT12 MUDA",
+    "plantProfileId": "lirio",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00039126",
+    "imageUrl": "/products/flores-plantas/00039126.webp",
+    "complementaryDescription": "ALOCASIA PT06 MUDA",
+    "plantProfileId": "alocasia",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00039392",
+    "imageUrl": "/products/flores-plantas/00039392.webp",
+    "complementaryDescription": "LAVANDA A2 PT15 MUDA",
+    "plantProfileId": "lavanda",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00042040",
+    "imageUrl": "/products/flores-plantas/00042040.webp",
+    "complementaryDescription": "HERA C13 MUDA",
+    "plantProfileId": "hera",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00042409",
+    "imageUrl": "/products/flores-plantas/00042409.webp",
+    "complementaryDescription": "ALFAVACA SC MUDA",
+    "plantProfileId": "alfavaca",
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190004",
+    "imageUrl": "/products/fertilizantes/00190004.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190009",
+    "imageUrl": "/products/fertilizantes/00190009.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190010",
+    "imageUrl": "/products/fertilizantes/00190010.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190011",
+    "imageUrl": "/products/fertilizantes/00190011.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190012",
+    "imageUrl": "/products/fertilizantes/00190012.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190013",
+    "imageUrl": "/products/fertilizantes/00190013.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190015",
+    "imageUrl": "/products/fertilizantes/00190015.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190016",
+    "imageUrl": "/products/fertilizantes/00190016.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190017",
+    "imageUrl": "/products/fertilizantes/00190017.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190018",
+    "imageUrl": "/products/fertilizantes/00190018.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190019",
+    "imageUrl": "/products/fertilizantes/00190019.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190021",
+    "imageUrl": "/products/fertilizantes/00190021.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190022",
+    "imageUrl": "/products/fertilizantes/00190022.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190024",
+    "imageUrl": "/products/fertilizantes/00190024.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190025",
+    "imageUrl": "/products/fertilizantes/00190025.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190026",
+    "imageUrl": "/products/fertilizantes/00190026.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190027",
+    "imageUrl": "/products/fertilizantes/00190027.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190028",
+    "imageUrl": "/products/fertilizantes/00190028.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190029",
+    "imageUrl": "/products/fertilizantes/00190029.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190030",
+    "imageUrl": "/products/fertilizantes/00190030.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190031",
+    "imageUrl": "/products/fertilizantes/00190031.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190032",
+    "imageUrl": "/products/fertilizantes/00190032.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190033",
+    "imageUrl": "/products/fertilizantes/00190033.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190034",
+    "imageUrl": "/products/fertilizantes/00190034.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190036",
+    "imageUrl": "/products/fertilizantes/00190036.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190037",
+    "imageUrl": "/products/fertilizantes/00190037.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190039",
+    "imageUrl": "/products/fertilizantes/00190039.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190042",
+    "imageUrl": "/products/fertilizantes/00190042.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190045",
+    "imageUrl": "/products/fertilizantes/00190045.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190047",
+    "imageUrl": "/products/fertilizantes/00190047.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190053",
+    "imageUrl": "/products/fertilizantes/00190053.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190057",
+    "imageUrl": "/products/fertilizantes/00190057.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190058",
+    "imageUrl": "/products/fertilizantes/00190058.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190059",
+    "imageUrl": "/products/fertilizantes/00190059.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190066",
+    "imageUrl": "/products/fertilizantes/00190066.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190067",
+    "imageUrl": "/products/fertilizantes/00190067.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190068",
+    "imageUrl": "/products/fertilizantes/00190068.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190070",
+    "imageUrl": "/products/fertilizantes/00190070.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190073",
+    "imageUrl": "/products/fertilizantes/00190073.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190074",
+    "imageUrl": "/products/fertilizantes/00190074.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190075",
+    "imageUrl": "/products/fertilizantes/00190075.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190078",
+    "imageUrl": "/products/fertilizantes/00190078.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190081",
+    "imageUrl": "/products/fertilizantes/00190081.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190082",
+    "imageUrl": "/products/fertilizantes/00190082.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190084",
+    "imageUrl": "/products/fertilizantes/00190084.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190086",
+    "imageUrl": "/products/fertilizantes/00190086.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190099",
+    "imageUrl": "/products/fertilizantes/00190099.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190102",
+    "imageUrl": "/products/fertilizantes/00190102.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190103",
+    "imageUrl": "/products/fertilizantes/00190103.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190104",
+    "imageUrl": "/products/fertilizantes/00190104.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190106",
+    "imageUrl": "/products/fertilizantes/00190106.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190109",
+    "imageUrl": "/products/fertilizantes/00190109.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190111",
+    "imageUrl": "/products/fertilizantes/00190111.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190112",
+    "imageUrl": "/products/fertilizantes/00190112.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190113",
+    "imageUrl": "/products/fertilizantes/00190113.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190114",
+    "imageUrl": "/products/fertilizantes/00190114.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190116",
+    "imageUrl": "/products/fertilizantes/00190116.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190117",
+    "imageUrl": "/products/fertilizantes/00190117.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190118",
+    "imageUrl": "/products/fertilizantes/00190118.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190119",
+    "imageUrl": "/products/fertilizantes/00190119.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190120",
+    "imageUrl": "/products/fertilizantes/00190120.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190121",
+    "imageUrl": "/products/fertilizantes/00190121.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190122",
+    "imageUrl": "/products/fertilizantes/00190122.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190123",
+    "imageUrl": "/products/fertilizantes/00190123.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190124",
+    "imageUrl": "/products/fertilizantes/00190124.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190127",
+    "imageUrl": "/products/fertilizantes/00190127.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190128",
+    "imageUrl": "/products/fertilizantes/00190128.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190130",
+    "imageUrl": "/products/fertilizantes/00190130.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190131",
+    "imageUrl": "/products/fertilizantes/00190131.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190134",
+    "imageUrl": "/products/fertilizantes/00190134.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190135",
+    "imageUrl": "/products/fertilizantes/00190135.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190136",
+    "imageUrl": "/products/fertilizantes/00190136.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190138",
+    "imageUrl": "/products/fertilizantes/00190138.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190139",
+    "imageUrl": "/products/fertilizantes/00190139.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190141",
+    "imageUrl": "/products/fertilizantes/00190141.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190142",
+    "imageUrl": "/products/fertilizantes/00190142.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190143",
+    "imageUrl": "/products/fertilizantes/00190143.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190145",
+    "imageUrl": "/products/fertilizantes/00190145.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190147",
+    "imageUrl": "/products/fertilizantes/00190147.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190149",
+    "imageUrl": "/products/fertilizantes/00190149.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190150",
+    "imageUrl": "/products/fertilizantes/00190150.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190151",
+    "imageUrl": "/products/fertilizantes/00190151.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190154",
+    "imageUrl": "/products/fertilizantes/00190154.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190155",
+    "imageUrl": "/products/fertilizantes/00190155.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190156",
+    "imageUrl": "/products/fertilizantes/00190156.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190159",
+    "imageUrl": "/products/fertilizantes/00190159.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190160",
+    "imageUrl": "/products/fertilizantes/00190160.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190161",
+    "imageUrl": "/products/fertilizantes/00190161.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190163",
+    "imageUrl": "/products/fertilizantes/00190163.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190165",
+    "imageUrl": "/products/fertilizantes/00190165.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190166",
+    "imageUrl": "/products/fertilizantes/00190166.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190170",
+    "imageUrl": "/products/fertilizantes/00190170.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190171",
+    "imageUrl": "/products/fertilizantes/00190171.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190172",
+    "imageUrl": "/products/fertilizantes/00190172.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190173",
+    "imageUrl": "/products/fertilizantes/00190173.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190174",
+    "imageUrl": "/products/fertilizantes/00190174.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190175",
+    "imageUrl": "/products/fertilizantes/00190175.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190177",
+    "imageUrl": "/products/fertilizantes/00190177.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190179",
+    "imageUrl": "/products/fertilizantes/00190179.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190181",
+    "imageUrl": "/products/fertilizantes/00190181.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190182",
+    "imageUrl": "/products/fertilizantes/00190182.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190184",
+    "imageUrl": "/products/fertilizantes/00190184.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190185",
+    "imageUrl": "/products/fertilizantes/00190185.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190186",
+    "imageUrl": "/products/fertilizantes/00190186.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190187",
+    "imageUrl": "/products/fertilizantes/00190187.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190188",
+    "imageUrl": "/products/fertilizantes/00190188.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190189",
+    "imageUrl": "/products/fertilizantes/00190189.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190190",
+    "imageUrl": "/products/fertilizantes/00190190.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190192",
+    "imageUrl": "/products/fertilizantes/00190192.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190194",
+    "imageUrl": "/products/fertilizantes/00190194.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190195",
+    "imageUrl": "/products/fertilizantes/00190195.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190196",
+    "imageUrl": "/products/fertilizantes/00190196.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190201",
+    "imageUrl": "/products/fertilizantes/00190201.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190202",
+    "imageUrl": "/products/fertilizantes/00190202.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190203",
+    "imageUrl": "/products/fertilizantes/00190203.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190204",
+    "imageUrl": "/products/fertilizantes/00190204.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190206",
+    "imageUrl": "/products/fertilizantes/00190206.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190207",
+    "imageUrl": "/products/fertilizantes/00190207.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190214",
+    "imageUrl": "/products/fertilizantes/00190214.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190215",
+    "imageUrl": "/products/fertilizantes/00190215.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190217",
+    "imageUrl": "/products/fertilizantes/00190217.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190218",
+    "imageUrl": "/products/fertilizantes/00190218.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190220",
+    "imageUrl": "/products/fertilizantes/00190220.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190221",
+    "imageUrl": "/products/fertilizantes/00190221.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190222",
+    "imageUrl": "/products/fertilizantes/00190222.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  },
+  {
+    "codRef": "00190225",
+    "imageUrl": "/products/fertilizantes/00190225.webp",
+    "complementaryDescription": null,
+    "plantProfileId": null,
+    "schemaVersion": 1
+  }
+]

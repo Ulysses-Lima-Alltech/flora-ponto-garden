@@ -1,4 +1,4 @@
-export type ProductCategory = 'herbs-spices' | 'flowers-plants' | 'fertilizers'
+export type ProductCategory = 'herbs-spices' | 'flowers-plants' | 'fertilizers' | 'other'
 export type LightLevel = 'low' | 'indirect' | 'bright-indirect' | 'direct'
 export type WateringLevel = 'low' | 'moderate' | 'frequent'
 export type Environment = 'indoor' | 'outdoor' | 'covered'
@@ -14,6 +14,15 @@ export interface Product {
   categoryLabel: string
   image: string
   searchText: string
+  jrsId?: number
+  codPro?: string
+  currentStock?: number | null
+  active?: boolean
+  available?: boolean
+  groupId?: number
+  familyId?: number
+  barcodes?: string[]
+  fetchedAt?: string
 }
 
 // These profiles remain available for future guided-care flows. The real

@@ -1,5 +1,6 @@
 ﻿import "dotenv/config";
 
+import { enrichmentRouter } from "./routes/enrichment.routes.js";
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
@@ -72,6 +73,8 @@ app.get("/health", (_req, res) => {
 // ==========================================
 
 app.use("/api/products", productsRoutes);
+
+app.use("/api/enrichment", enrichmentRouter);
 
 app.use("/api", catalogRoutes);
 

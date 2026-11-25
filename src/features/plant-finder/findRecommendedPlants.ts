@@ -76,7 +76,7 @@ const profileCandidates = () => {
   const seenProfileIds = new Set<string>()
 
   return products.flatMap((product) => {
-    if (product.category === 'fertilizers' || !product.plantProfileId || seenProfileIds.has(product.plantProfileId)) return []
+    if ((product.category !== 'herbs-spices' && product.category !== 'flowers-plants') || !product.plantProfileId || seenProfileIds.has(product.plantProfileId)) return []
     const profile = getPlantProfile(product.plantProfileId)
     if (!profile || profile.confidence === 'pendente') return []
     seenProfileIds.add(profile.id)
