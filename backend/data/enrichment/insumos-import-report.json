@@ -1,0 +1,1028 @@
+{
+  "results": {
+    "total": 127,
+    "created": 127,
+    "updated": 0,
+    "preserved": 0,
+    "notFound": 0,
+    "errors": 0
+  },
+  "report": [
+    {
+      "codRef": "00050024",
+      "description": "FERT.BIOMIX BIOKASHI 1KG REF:90",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050024.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050025",
+      "description": "BRILHA FOLHA DIMY 200ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050025.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050026",
+      "description": "BRILHA FOLHA DIMY 50ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050026.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050027",
+      "description": "BRILHA FOLHA DIMY P.U 500ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050027.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050030",
+      "description": "CALCARIO DIMY 3KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050030.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050031",
+      "description": "CUPRO(SULF COBRE)DIMY 30GR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050031.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050032",
+      "description": "CUPRO(SULF.COBRE) DIMY 300GR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050032.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050034",
+      "description": "ENXOFRE 30GR DIMY",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050034.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050035",
+      "description": "FERT DIMY TABLET ADUB  50G",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050035.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050037",
+      "description": "DIMY PRONTO C/ GATILHO 500ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050037.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050038",
+      "description": "DIMY PRONTO S/ GATILHO 500ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050038.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050039",
+      "description": "DIMYPEL 20GR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050039.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050040",
+      "description": "FERTILIZANTE 04.14.08 5KG DIMY",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050040.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050041",
+      "description": "FERTILIZANTE 10.10.10 5KG DIMY",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050041.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050043",
+      "description": "TORTA DE MAMONA DIMY 5KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050043.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050044",
+      "description": "INSET. DIMETHYSON CONC. 30ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050044.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050046",
+      "description": "GLIFOSATO HERBICIDA DIMY 20ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050046.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050047",
+      "description": "OLEO VEGETAL DIMY 100ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050047.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050048",
+      "description": "POLI VIOLETA MINI 38CM DECORADO",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050048.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050049",
+      "description": "VERMICULITA DIMY 2LT",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050049.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050126",
+      "description": "INSET TERM MALATHION CITROMAX  500 1LT",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050126.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050155",
+      "description": "FERT 04.14.08 1000GR ULTRA VERDE",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050155.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050161",
+      "description": "FERT 15.15.20 + MICRO 500GR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050161.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050163",
+      "description": "FERT 30.10.10 ORCHIDY MANUT 150GR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050163.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050164",
+      "description": "FERT 07.07.07 SV FOLIAR 160ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050164.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050165",
+      "description": "FERT 12.06.06 SV RAIZ 160ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050165.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050166",
+      "description": "FERT 08.04.04 ROSAS 1000GR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050166.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050168",
+      "description": "FERT VIOLETA 150GR NUTRI",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050168.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050169",
+      "description": "FERT 03.08.00 TORTA DE ALG + FAR OSSO 1KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050169.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050170",
+      "description": "FERT TEMP E HORTAS DIMY 250ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050170.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050171",
+      "description": "INSET FUMMY PO DE FUMO 400GR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050171.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050173",
+      "description": "FERT NPK 17.17.18 CITRUS MANUT 1KG BONIGO",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050173.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050178",
+      "description": "INSET SV MATA FORMIGA 30ML DU",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050178.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050182",
+      "description": "FERT CACTOS E SUC 150GR NUTRI",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050182.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050183",
+      "description": "INSET JD PRIMAV COCHONILHA 750ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050183.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050193",
+      "description": "INSETICIDA NEEM-DENGUE P.U 500ML NUTRI",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050193.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050197",
+      "description": "INSET FIPROTECH FIPRONIL 250G",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050197.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050200",
+      "description": "INSET TERMI LAMBDA CITROMAX 25GRS",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050200.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050202",
+      "description": "INSET FIPROMIX PU 250ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050202.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050210",
+      "description": "ICON GARDEN INSETICIDA 25 GR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050210.webp",
+      "active": true,
+      "available": false,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050215",
+      "description": "SUBST.BIOMIX ORQ.CHIPS 500G REF:164",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050215.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050299",
+      "description": "TERRA VEGETAL C/ HUMUS 03KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050299.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050323",
+      "description": "INSET. DIMY DDVP 500CE 50ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050323.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050328",
+      "description": "FERT FARINHA DE OSSO POUCH 1K NUTRI",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050328.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050348",
+      "description": "FERT 12.20.20 ORCHIDY FLORACAO 150GR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050348.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050349",
+      "description": "INSET SV KILLER 3X1 PU 750ML GATILHO",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050349.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050351",
+      "description": "INSET SV KILLER 3X1 CONC 100ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050351.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050358",
+      "description": "GEL P/FORMIGAS CITROMAX SERIN 10GRS",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050358.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050361",
+      "description": "FERT ROSAS 150GRS UNICA NUTR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050361.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050362",
+      "description": "KAPINA 60ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050362.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050367",
+      "description": "TERRA VEGETAL ADUB C/ HUMUS 20KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050367.webp",
+      "active": true,
+      "available": false,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050370",
+      "description": "PLANTIO PREMIUM 20KG CALTERRA AZUL",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050370.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050392",
+      "description": "FERT ORGANICO GRAN 750GR ECOADUBO",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050392.webp",
+      "active": false,
+      "available": false,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050397",
+      "description": "INSET MADELESMA GARDEN 50G",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050397.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050399",
+      "description": "FERT 10.10.10 1KG POUCH NUTRI",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050399.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050401",
+      "description": "FERT01.10+CAR FAR DE OSSO 1000G ULTRAV",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050401.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050405",
+      "description": "KAPINA PLUS 60 ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050405.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050411",
+      "description": "FERT PAST ROSA DO DESERTO 50GRS UNIC NUTR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050411.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050421",
+      "description": "CALCARIO DE CONCHAS 1KG CX UNICA NUTRI",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050421.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050430",
+      "description": "INSET. DIMETHYSON P.U 500ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050430.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050437",
+      "description": "INS CUPRO (C BORDAL) 60ML DIMMY",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050437.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050446",
+      "description": "SUBST ORQUIDEA 01KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050446.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050448",
+      "description": "GEL P/BARATAS CITROMAX SERIN 10GRS",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050448.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050453",
+      "description": "INSET RESOLVA HIDRO 25GRS FAZ 5L",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050453.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050457",
+      "description": "REPELENTE NAT FUMO LIQ 500ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050457.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050458",
+      "description": "INSETICIDA PLUS P.U 500ML NUTRIPLAN",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050458.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050462",
+      "description": "GRAMIZAP IMAZAPIR CITROMAX 1LT MAX20",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050462.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050465",
+      "description": "SUBST.BIOMIX F.FOLHAGENS 02KG REF:147",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050465.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050466",
+      "description": "SUBST.BIOMIX F.FOLHAGENS 05KG REF:41",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050466.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050467",
+      "description": "FERT.BIOMIX BIOKASHI ORG.300GR REF199",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050467.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050468",
+      "description": "FERT BIOMIX COBERTA 300GRS REF195",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050468.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050469",
+      "description": "SUBST.BIOMIX F.FOLHAGENS 20KG REF:42",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050469.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050486",
+      "description": "GEL XO PASSAROS 250GR CITROMAX(INATIVO)",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050486.webp",
+      "active": false,
+      "available": false,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050489",
+      "description": "FERT T MAMONA+FAR OSSO 1KG POUCH NUTR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050489.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050498",
+      "description": "FERT SALITRE CHILE 500GRS UNICA NUTR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050498.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050503",
+      "description": "CONDICIONADOR SOLO PLANTIO BIOMIX 20K REF40",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050503.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050516",
+      "description": "FERT MINERAL 04.14.08 1KG CX UNICA NUTRI",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050516.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050522",
+      "description": "REPELENTE NAT PO DE FUMO 400 GRS NUTRI",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050522.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050534",
+      "description": "FORTH ACARICIDA P.U 500ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050534.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050540",
+      "description": "PLANTIO PREMIUM 10KG CALTERRA AZUL",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050540.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050542",
+      "description": "AFASTA GATO CITROMAX 300GRS",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050542.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050545",
+      "description": "TERRA VEGETAL 02KG BIOMIX",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050545.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050546",
+      "description": "TERRA VEGETAL 10KG BIOMIX",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050546.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050547",
+      "description": "TERRA VEGETAL 20KG BIOMIX",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050547.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050549",
+      "description": "FORTH SUBST ORQ TERR 2KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050549.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050551",
+      "description": "FORTH SUBST SAMAMBAIAS 2KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050551.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050552",
+      "description": "FERT.ROSA DO DESERTO 150GRS UN",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050552.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050554",
+      "description": "FERT ROSA DO DESERTO 250ML DIMY",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050554.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050564",
+      "description": "TERRA VEGETAL C/ HUMUS 10KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050564.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050565",
+      "description": "COBERTURA PREMIUM 10KG CALTERRA VERDE",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050565.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050566",
+      "description": "COBERTURA PREMIUM 03KG CALTERRA VERDE",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050566.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050567",
+      "description": "TERRA VEGETAL C/ HUMUS 20KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050567.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050568",
+      "description": "COBERTURA PREMIUM 20KG CALTERRA VERDE",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050568.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050574",
+      "description": "PLANTIO PREMIUM 03KG CALTERRA AZUL",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050574.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050577",
+      "description": "FORM ISCA GRAO VERDE (BAIT GREEN) 50GRS SC",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050577.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050581",
+      "description": "FERT CACTOS E SUC DIMY 120ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050581.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050592",
+      "description": "TURFA P/ CACTOS E SUC 3KG VASART",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050592.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050601",
+      "description": "ESTERCO BOVINO 03KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050601.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050602",
+      "description": "HUMUS DE MINHOCA 03KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050602.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050603",
+      "description": "SUBST CACTO E SUCULENTA 03KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050603.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050604",
+      "description": "SUBST SAMAMBAIA 03KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050604.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050605",
+      "description": "FORTH PASTA SELANTE 20GR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050605.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050608",
+      "description": "FORTH SUBST CACTO/SUC 2KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050608.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050609",
+      "description": "FERTILIZANTE EKOSIL 1KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050609.webp",
+      "active": true,
+      "available": false,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050611",
+      "description": "FERTILIZANTE YOORIN MASTER 1SI 1KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050611.webp",
+      "active": true,
+      "available": false,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050612",
+      "description": "FERTILIZANTE H MASTER 6 1KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050612.webp",
+      "active": true,
+      "available": false,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050613",
+      "description": "DIMY TABLET 250GR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050613.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050616",
+      "description": "FERT MINERAL 04.14.08 SC 1KG NUTRI",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050616.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050617",
+      "description": "FERT 10.10.10 1KG SACO NUTRI",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050617.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050621",
+      "description": "FERT TORTA MAMONA 800G POUCH NUTR",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050621.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050622",
+      "description": "FERT DIMY FRUTAS NPK 10-8-20+9 1KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050622.webp",
+      "active": true,
+      "available": false,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050623",
+      "description": "FERT DIMY FLORES NPK 6-18-10+9 1KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050623.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050624",
+      "description": "FERT DIMY BOKASHI 1 KG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050624.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050629",
+      "description": "SUBST FLORES E FOLHAGENS 10KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050629.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050630",
+      "description": "HUMUS DE MINHOCA 10KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050630.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050631",
+      "description": "SUBST SAMAMBAIA 10KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050631.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050632",
+      "description": "SUBST CACTO E SUCULENTA 10KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050632.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050633",
+      "description": "SUBST ORQUIDEA 03KG CALTERRA",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050633.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050634",
+      "description": "FERT FLORES DIMY 120ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050634.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050635",
+      "description": "FERT FRUTAS DIMY 120ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050635.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050636",
+      "description": "FERT KASHI DIMY 120ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050636.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050637",
+      "description": "INSETICIDA RAWELL BLEKALT 90GRS",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050637.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050638",
+      "description": "FERT LEVEN CALDA BORDALESA 30G",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050638.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050639",
+      "description": "CALPIK CALDA BORDALESA CONC PIKA PAU 100ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050639.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050640",
+      "description": "ISCA MIX FORMICIDA FIPRONIL PIKA PAU 50GRS",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050640.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050641",
+      "description": "FERT 09.07.15 JABUTICABA 500G BONIG",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050641.webp",
+      "active": true,
+      "available": true,
+      "status": "CREATED"
+    },
+    {
+      "codRef": "00050645",
+      "description": "AFASTA GATO SPRAY CITROMAX 500ML",
+      "imageUrl": "/products/Imagens_Produtos_Insumos/00050645.webp",
+      "active": true,
+      "available": false,
+      "status": "CREATED"
+    }
+  ]
+}

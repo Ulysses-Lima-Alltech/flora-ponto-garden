@@ -19,6 +19,7 @@ export interface Product {
   currentStock?: number | null
   active?: boolean
   available?: boolean
+  availabilityConfirmed?: boolean
   groupId?: number
   familyId?: number
   barcodes?: string[]

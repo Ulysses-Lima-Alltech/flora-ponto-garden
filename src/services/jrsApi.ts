@@ -26,21 +26,23 @@ export class ProductApiError extends Error {
 }
 
 interface JrsProduct {
-  id: number
+  id: number | null
   codRef: string
-  codPro: string
+  codPro: string | null
   description: string
   technicalDescription?: string | null
   currentStock: number | null
-  active: boolean
+  active: boolean | null
   available: boolean
-  groupId: number
+  groupId: number | null
   groupDescription: string
-  familyId: number
+  familyId: number | null
   familyDescription: string
   barcodes: string[]
   primaryImageUrl?: string | null
-  fetchedAt: string
+  fetchedAt: string | null
+  availabilityConfirmed?: boolean
+  cacheStatus?: 'fresh' | 'stale'
 }
 
 function categoryFor(p: JrsProduct): ProductCategory {
@@ -52,7 +54,7 @@ function categoryFor(p: JrsProduct): ProductCategory {
     return 'fertilizers'
   }
 
-  if ([2, 3, 14, 35].includes(p.groupId)) {
+  if (p.groupId !== null && [2, 3, 14, 35].includes(p.groupId)) {
     return 'flowers-plants'
   }
 
@@ -86,7 +88,7 @@ function getCachedProduct(path: string): JrsProduct | undefined {
 function cacheProduct(path: string, product: JrsProduct) {
   const entry = {
     product,
-    expiresAt: Date.now() + PRODUCT_CACHE_TTL_MS,
+    expiresAt: product.cacheStatus === 'stale' ? Date.now() + 3_000 : Math.min(Date.now() + PRODUCT_CACHE_TTL_MS, product.fetchedAt ? Date.parse(product.fetchedAt) + 300_000 : Date.now() + PRODUCT_CACHE_TTL_MS),
   }
 
   productCache.set(path, entry)
@@ -227,8 +229,8 @@ async function lookup(
   const product: Product = {
     id: p.codRef,
     code: p.codRef,
-    jrsId: p.id,
-    codPro: p.codPro,
+    jrsId: p.id ?? undefined,
+    codPro: p.codPro ?? undefined,
 
     name: p.description,
     description,
@@ -256,14 +258,15 @@ async function lookup(
     ].join(' '),
 
     currentStock: p.currentStock,
-    active: p.active,
-    available: p.available,
+    active: p.active ?? undefined,
+    available: p.availabilityConfirmed !== false && p.available,
+    availabilityConfirmed: p.availabilityConfirmed ?? true,
 
-    groupId: p.groupId,
-    familyId: p.familyId,
+    groupId: p.groupId ?? undefined,
+    familyId: p.familyId ?? undefined,
 
     barcodes: p.barcodes,
-    fetchedAt: p.fetchedAt,
+    fetchedAt: p.fetchedAt ?? undefined,
   }
 
   rememberJrsProduct(product)

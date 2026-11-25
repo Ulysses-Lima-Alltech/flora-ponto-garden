@@ -1,4 +1,4 @@
-﻿import "dotenv/config";
+import "dotenv/config";
 
 const baseUrl = process.env.JRS_API_BASE_URL?.replace(/\/+$/, "");
 const clientId = process.env.JRS_CLIENT_ID;
@@ -24,7 +24,7 @@ function validateConfig() {
     }
 }
 
-async function authenticate() {
+async function authenticate(signal?: AbortSignal) {
     validateConfig();
 
     if (accessToken && Date.now() < expiresAt - refreshMarginMs) {
@@ -42,7 +42,7 @@ async function authenticate() {
             clientId,
             clientSecret
         }),
-        signal: AbortSignal.timeout(timeoutMs)
+        signal: signal ? AbortSignal.any([signal, AbortSignal.timeout(timeoutMs)]) : AbortSignal.timeout(timeoutMs)
     });
 
     if (!response.ok) {
@@ -70,10 +70,11 @@ async function authenticate() {
 
 async function request(
     path: string,
-    retry = true
+    retry = true,
+    signal?: AbortSignal
 ): Promise<any> {
 
-    const token = await authenticate();
+    const token = await authenticate(signal);
 
     const response = await fetch(`${baseUrl}${path}`, {
         method: "GET",
@@ -82,17 +83,20 @@ async function request(
             "X-API-KEY": apiKey!,
             "Accept": "application/json"
         },
-        signal: AbortSignal.timeout(timeoutMs)
+        signal: signal ? AbortSignal.any([signal, AbortSignal.timeout(timeoutMs)]) : AbortSignal.timeout(timeoutMs)
     });
 
     if (response.status === 401 && retry) {
         accessToken = null;
         expiresAt = 0;
 
-        return request(path, false);
+        return request(path, false, signal);
     }
 
-    const data = await response.json().catch(() => null);
+    const data = await response.json().catch(error => {
+        if (signal?.aborted || error?.name === "AbortError" || error?.name === "TimeoutError") throw error;
+        return null;
+    });
 
     if (!response.ok) {
         const error = new Error(
@@ -122,23 +126,23 @@ export const jrsService = {
     getProducts: () =>
         request("/api/Produtos"),
 
-    getProductById: (id: string) =>
+    getProductById: (id: string, signal?: AbortSignal) =>
         request(
-            `/api/Produtos/${encodeURIComponent(id)}`
+            `/api/Produtos/${encodeURIComponent(id)}`, true, signal
         ),
 
-    getProductByReference: (code: string) =>
+    getProductByReference: (code: string, signal?: AbortSignal) =>
         request(
-            `/api/Produtos/consulta?codRef=${encodeURIComponent(code)}`
+            `/api/Produtos/consulta?codRef=${encodeURIComponent(code)}`, true, signal
         ),
 
-    getProductByCode: (code: string) =>
+    getProductByCode: (code: string, signal?: AbortSignal) =>
         request(
-            `/api/Produtos/consulta?codPro=${encodeURIComponent(code)}`
+            `/api/Produtos/consulta?codPro=${encodeURIComponent(code)}`, true, signal
         ),
 
-    getProductByBarcode: (barcode: string) =>
+    getProductByBarcode: (barcode: string, signal?: AbortSignal) =>
         request(
-            `/api/Produtos/consulta?codBarra=${encodeURIComponent(barcode)}`
+            `/api/Produtos/consulta?codBarra=${encodeURIComponent(barcode)}`, true, signal
         )
 };

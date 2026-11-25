@@ -2,7 +2,10 @@ import { Router } from "express";
 import type { Request, Response } from "express";
 import { jrsService } from "../services/jrs.service.js";
 
+import { lookupCommercialProduct, warmCommercialCache } from "../services/commercial-cache.service.js";
+
 const router = Router();
+void warmCommercialCache();
 
 // ==========================================
 // PADRONIZACAO DOS DADOS DO PRODUTO
@@ -61,6 +64,8 @@ function normalizeProduct(product: any) {
 
         source: "JRS",
 
+        availabilityConfirmed: typeof product.active === "boolean" &&
+            (product.active === false || typeof product.currentStock === "number"),
         fetchedAt: new Date().toISOString()
     };
 }
@@ -105,7 +110,7 @@ function handleError(error: any, res: Response) {
 
     return res.status(502).json({
         success: false,
-        message: "Nao foi possivel consultar o ERP JRS."
+        message: "Nao foi possivel consultar o produto."
     });
 }
 
@@ -115,40 +120,38 @@ function handleError(error: any, res: Response) {
 
 async function executeLookup(
     res: Response,
-    lookup: () => Promise<any>
+    key: string,
+    lookup: (signal: AbortSignal) => Promise<any>
 ) {
-
     try {
-
-        const product = await lookup();
-
-        if (product?.found === false) {
-            return res.status(404).json({
-                success: false,
-                message: "Produto nao encontrado."
-            });
-        }
-
-        if (
-            !product ||
-            product.success !== true ||
-            product.id == null
-        ) {
-            return res.status(502).json({
-                success: false,
-                message: "Resposta invalida do ERP JRS."
-            });
-        }
-
-        return res.json({
-            success: true,
-            data: normalizeProduct(product)
+        const data = await lookupCommercialProduct(key, async signal => {
+            const product = await lookup(signal);
+            if (product?.found === false) {
+                throw Object.assign(new Error("Produto nao encontrado."), { statusCode: 404 });
+            }
+            if (!product || product.success !== true || product.id == null ||
+                typeof product.codRef !== "string" || !product.codRef ||
+                typeof product.description !== "string" || !product.description.trim()) {
+                throw new Error("Resposta invalida do ERP.");
+            }
+            return normalizeProduct(product);
+        }, async (reference, signal) => {
+            const product = await jrsService.getProductByReference(reference, signal);
+            if (product?.found === false) {
+                throw Object.assign(new Error("Produto nao encontrado."), { statusCode: 404 });
+            }
+            if (!product || product.success !== true || product.id == null ||
+                product.codRef !== reference || typeof product.description !== "string" || !product.description.trim()) {
+                throw new Error("Resposta invalida do ERP.");
+            }
+            return normalizeProduct(product);
         });
-
-    } catch (error) {
-
+        return res.json({ success: true, data });
+    } catch (error: any) {
+        if (error?.statusCode === 503) {
+            return res.status(503).json({ success: false, message: "Servico temporariamente indisponivel." });
+        }
         return handleError(error, res);
-
     }
 }
 
@@ -175,7 +178,8 @@ router.get("/id/:id", async (req: Request, res: Response) => {
 
     return executeLookup(
         res,
-        () => jrsService.getProductById(id)
+        `id:${id}`,
+            signal => jrsService.getProductById(id, signal)
     );
 
 });
@@ -199,7 +203,8 @@ router.get(
 
         return executeLookup(
             res,
-            () => jrsService.getProductByReference(code)
+            `reference:${code}`,
+            signal => jrsService.getProductByReference(code, signal)
         );
 
     }
@@ -224,7 +229,8 @@ router.get(
 
         return executeLookup(
             res,
-            () => jrsService.getProductByCode(code)
+            `code:${code}`,
+            signal => jrsService.getProductByCode(code, signal)
         );
 
     }
@@ -249,7 +255,8 @@ router.get(
 
         return executeLookup(
             res,
-            () => jrsService.getProductByBarcode(barcode)
+            `barcode:${barcode}`,
+            signal => jrsService.getProductByBarcode(barcode, signal)
         );
 
     }
@@ -271,7 +278,7 @@ router.get("/", async (_req: Request, res: Response) => {
         ) {
             return res.status(502).json({
                 success: false,
-                message: "Resposta invalida do ERP JRS."
+                message: "Resposta invalida do servico."
             });
         }
 
