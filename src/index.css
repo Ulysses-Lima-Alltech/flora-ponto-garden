@@ -288,7 +288,37 @@ button:focus-visible, a:focus-visible { outline: 4px solid var(--color-flora); o
 }
 
 @media (min-width: 701px) {
-  .kiosk-main--home .flora-portrait-frame { min-height: 0; }
+  /* Keep the greeting near the header, independent of the centered action area. */
+  .kiosk-main--home { overflow-y: auto; }
+  .kiosk-content--home { padding-top: clamp(18px, 2.5vh, 32px); }
+  .home-page {
+    height: auto;
+    min-height: 100%;
+    grid-template-rows: auto minmax(min-content, 1fr);
+    align-content: stretch;
+    gap: clamp(28px, 3.5vh, 42px);
+  }
+  .home-page > .flora-greeting { font-size: clamp(22px, 2.7vw, 30px); }
+
+  /* Let the original portrait ratio determine the row height, not a forced crop. */
+  .home-layout {
+    grid-template-columns: minmax(0, 47fr) minmax(0, 53fr);
+    align-items: stretch;
+    align-self: center;
+  }
+  .home-layout > .flora-assistant { align-self: start; }
+  .kiosk-main--home .flora-portrait-frame {
+    width: 100%;
+    max-width: 400px;
+    max-height: none;
+    min-height: 0;
+  }
+  .home-options {
+    align-self: stretch;
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+  .home-actions { grid-template-rows: repeat(2, minmax(160px, 1fr)); }
+
   .kiosk-main--home .home-action-card--grid { min-height: 160px; padding: 12px 14px; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto 1fr auto; gap: 5px; }
   .kiosk-main--home .action-icon { width: 24px; height: 24px; }
   .kiosk-main--home .action-icon svg { width: 22px; height: 22px; }
